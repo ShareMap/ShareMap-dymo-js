@@ -1,0 +1,31 @@
+<project name="ShareMap-dymo-js" default="dist" basedir=".">
+    <description>
+        Builds ShareMap-dymo-js library
+    </description>
+
+    <target name="build-js">
+        <concat destfile="sharemap-dymo.js" overwrite="true" eol="lf">
+            <fileset file="./include/js/header.js"/>
+            <fileset file="./src/Helper.js"/>
+            <fileset file="./src/Geometry.js"/>
+            <fileset file="./src/Places.js"/>
+            <fileset file="./src/Annealer.js"/>
+            <fileset file="./src/Labeler.js"/>
+            <fileset file="./include/js/footer.js"/>
+        </concat>
+    </target>
+    
+    <target name="build-node-js">
+        <!-- Create the time stamp -->
+        <tstamp/>
+        <!-- Create the build directory structure used by compile -->
+        <mkdir dir="${build}"/>
+    </target>
+    
+    <target name="build-as">
+        <!-- Create the time stamp -->
+        <tstamp/>
+        <!-- Create the build directory structure used by compile -->
+        <mkdir dir="${build}"/>
+    </target>
+</project>

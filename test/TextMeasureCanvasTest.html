@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>LabelerTest</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @font-face
+            {
+                font-family: DejaVuSansMono;
+                src: url(../fonts/DejaVuSansMono.ttf);
+            }
+
+            @font-face
+            {
+                font-family: DejaVuSerif;
+                src: url(../fonts/DejaVuSerif.ttf);
+            }
+
+            .testFont1{
+                font-family: DejaVuSerif;
+
+            }
+
+            .testFont2{
+                font-family: DejaVuSansMono;
+
+            }
+
+            .ruler {
+                white-space: nowrap; 
+            }
+        </style> 
+        <script src="./jquery.js"></script>
+        <script src="../src/TextMeasure.js"></script>
+        <script src="../src/TextMeasureCanvas.js"></script>
+        <script>
+
+            function runMeasureTest() {
+                var tmc = new TextMeasureCanvas();
+                tmc.init();
+                var m1 = tmc.measure("Philadelphia", 12, "DejaVuSansMono");
+                console.log(m1);
+                var m2 = tmc.measure("Philadelphia", 12, "DejaVuSerif");
+                console.log(m2);
+                var m3 = tmc.measure("Chicago", 12, "DejaVuSansMono");
+                console.log(m3);
+            }
+
+        </script>
+    </head>
+    <body onload="runMeasureTest()">
+        <div class="testFont1">Font 1</div>
+        <div class="testFont2">Font 2</div>
+
+    </body>
+</html>
