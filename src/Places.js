@@ -161,7 +161,7 @@ LabelPoint.prototype.init = function(name, fontFamily, fontSize, location, posit
 
 LabelPoint.prototype.hashable = true;
 
-LabelPoint.prototype.includePointInCollission = false;
+LabelPoint.prototype.includePointInCollission = true;
 
 LabelPoint.prototype.toString = function() {
     var self = this;

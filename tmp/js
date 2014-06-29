@@ -1,0 +1,2200 @@
+places.add(Point("New York", "fonts/Arial.ttf" , 12 , LMM( 40.71427 , -74.00597 ), PMM( 203.2933546666668 , 200 ), 8 ,{}));
+
+places.add(Point("Philadelphia", "fonts/Arial.ttf" , 12 , LMM( 39.95234 , -75.16379 ), PMM( 200 , 202.84314394819785 ), 8 ,{}));
+
+Time  0.021
+start
+1403132682992
+1
+Attempting automatic simulated anneal...
+Choice New York [1 max 1] [RI: 1]
+Choice 6 [6 max 13] [RI: 2]
+New point placement New York = 6
+PLACES MOVE ENERGY 11
+Initial, temperature 1, energy: 10
+Exploring temperature landscape:
+Temperature    Energy    Accept   Improve   Elapsed
+Choice New York [1 max 1] [RI: 3]
+Choice 3 [3 max 13] [RI: 4]
+New point placement New York = 3
+PLACES MOVE ENERGY 10.175
+Choice New York [1 max 1] [RI: 5]
+Choice 10 [10 max 13] [RI: 6]
+New point placement New York = 10
+PLACES MOVE ENERGY 10.4
+Choice Philadelphia [0 max 1] [RI: 8]
+Choice 10 [10 max 13] [RI: 9]
+New point placement Philadelphia = 10
+PLACES MOVE ENERGY 10.8
+Choice Philadelphia [0 max 1] [RI: 11]
+Choice 5 [5 max 13] [RI: 12]
+New point placement Philadelphia = 5
+PLACES MOVE ENERGY 11.3
+Choice Philadelphia [0 max 1] [RI: 14]
+Choice 7 [7 max 13] [RI: 15]
+New point placement Philadelphia = 7
+PLACES MOVE ENERGY 11
+Choice New York [1 max 1] [RI: 17]
+Choice 1 [1 max 13] [RI: 18]
+New point placement New York = 1
+PLACES MOVE ENERGY 10.07
+Choice New York [1 max 1] [RI: 19]
+Choice 12 [12 max 13] [RI: 20]
+New point placement New York = 12
+PLACES MOVE ENERGY 10.8
+Choice Philadelphia [0 max 1] [RI: 22]
+Choice 8 [8 max 13] [RI: 23]
+New point placement Philadelphia = 8
+PLACES MOVE ENERGY 0.5700000000000003
+Choice Philadelphia [0 max 1] [RI: 24]
+Choice 4 [4 max 13] [RI: 25]
+New point placement Philadelphia = 4
+PLACES MOVE ENERGY 10.27
+Choice Philadelphia [0 max 1] [RI: 27]
+Choice 8 [8 max 13] [RI: 28]
+New point placement Philadelphia = 8
+PLACES MOVE ENERGY 0.5700000000000003
+Choice New York [1 max 1] [RI: 29]
+Choice 2 [2 max 13] [RI: 30]
+New point placement New York = 2
+PLACES MOVE ENERGY 0.6000000000000002
+Choice Philadelphia [0 max 1] [RI: 32]
+Choice 2 [2 max 13] [RI: 33]
+New point placement Philadelphia = 2
+PLACES MOVE ENERGY 10.2
+Choice New York [1 max 1] [RI: 35]
+Choice 7 [7 max 13] [RI: 36]
+New point placement New York = 7
+PLACES MOVE ENERGY 11.1
+Choice Philadelphia [0 max 1] [RI: 38]
+Choice 11 [11 max 13] [RI: 39]
+New point placement Philadelphia = 11
+PLACES MOVE ENERGY 0.6750000000000002
+Choice Philadelphia [0 max 1] [RI: 41]
+Choice 3 [3 max 13] [RI: 42]
+New point placement Philadelphia = 3
+PLACES MOVE ENERGY 10.275
+Choice Philadelphia [0 max 1] [RI: 44]
+Choice 11 [11 max 13] [RI: 45]
+New point placement Philadelphia = 11
+PLACES MOVE ENERGY 0.6750000000000002
+Choice Philadelphia [0 max 1] [RI: 46]
+Choice 0 [0 max 13] [RI: 47]
+New point placement Philadelphia = 0
+PLACES MOVE ENERGY 10.1
+Choice New York [1 max 1] [RI: 49]
+Choice 4 [4 max 13] [RI: 50]
+New point placement New York = 4
+PLACES MOVE ENERGY 0.7750000000000001
+Choice New York [1 max 1] [RI: 52]
+Choice 2 [2 max 13] [RI: 53]
+New point placement New York = 2
+PLACES MOVE ENERGY 0.6750000000000002
+Choice New York [1 max 1] [RI: 54]
+Choice 8 [8 max 13] [RI: 55]
+New point placement New York = 8
+PLACES MOVE ENERGY 11.075
+Choice New York [1 max 1] [RI: 57]
+Choice 0 [0 max 13] [RI: 58]
+New point placement New York = 0
+PLACES MOVE ENERGY 0.5750000000000002
+Choice Philadelphia [0 max 1] [RI: 59]
+Choice 4 [4 max 13] [RI: 60]
+New point placement Philadelphia = 4
+PLACES MOVE ENERGY 10.2
+Choice Philadelphia [0 max 1] [RI: 62]
+Choice 2 [2 max 13] [RI: 63]
+New point placement Philadelphia = 2
+PLACES MOVE ENERGY 10.1
+Choice New York [1 max 1] [RI: 65]
+Choice 5 [5 max 13] [RI: 66]
+New point placement New York = 5
+PLACES MOVE ENERGY 1.475
+Choice New York [1 max 1] [RI: 68]
+Choice 8 [8 max 13] [RI: 69]
+New point placement New York = 8
+PLACES MOVE ENERGY 11.075
+Choice New York [1 max 1] [RI: 71]
+Choice 1 [1 max 13] [RI: 72]
+New point placement New York = 1
+PLACES MOVE ENERGY 0.645
+Choice Philadelphia [0 max 1] [RI: 73]
+Choice 6 [6 max 13] [RI: 74]
+New point placement Philadelphia = 6
+PLACES MOVE ENERGY 11.07
+Choice Philadelphia [0 max 1] [RI: 76]
+Choice 1 [1 max 13] [RI: 77]
+New point placement Philadelphia = 1
+PLACES MOVE ENERGY 10.14
+Choice Philadelphia [0 max 1] [RI: 79]
+Choice 9 [9 max 13] [RI: 80]
+New point placement Philadelphia = 9
+PLACES MOVE ENERGY 0.54
+Choice New York [1 max 1] [RI: 81]
+Choice 5 [5 max 13] [RI: 82]
+New point placement New York = 5
+PLACES MOVE ENERGY 1.37
+Choice New York [1 max 1] [RI: 84]
+Choice 13 [13 max 13] [RI: 85]
+New point placement New York = 13
+PLACES MOVE ENERGY 10.620000000000001
+Choice New York [1 max 1] [RI: 87]
+Choice 1 [1 max 13] [RI: 88]
+New point placement New York = 1
+PLACES MOVE ENERGY 0.54
+Choice New York [1 max 1] [RI: 89]
+Choice 13 [13 max 13] [RI: 90]
+New point placement New York = 13
+PLACES MOVE ENERGY 10.620000000000001
+Choice New York [1 max 1] [RI: 92]
+Choice 6 [6 max 13] [RI: 93]
+New point placement New York = 6
+PLACES MOVE ENERGY 11.47
+Choice New York [1 max 1] [RI: 95]
+Choice 1 [1 max 13] [RI: 96]
+New point placement New York = 1
+PLACES MOVE ENERGY 0.54
+Choice Philadelphia [0 max 1] [RI: 97]
+Choice 11 [11 max 13] [RI: 98]
+New point placement Philadelphia = 11
+PLACES MOVE ENERGY 0.645
+Choice Philadelphia [0 max 1] [RI: 100]
+Choice 13 [13 max 13] [RI: 101]
+New point placement Philadelphia = 13
+PLACES MOVE ENERGY 10.22
+Choice Philadelphia [0 max 1] [RI: 103]
+Choice 12 [12 max 13] [RI: 104]
+New point placement Philadelphia = 12
+PLACES MOVE ENERGY 0.8700000000000001
+Choice New York [1 max 1] [RI: 106]
+Choice 13 [13 max 13] [RI: 107]
+New point placement New York = 13
+PLACES MOVE ENERGY 10.950000000000001
+Choice New York [1 max 1] [RI: 109]
+Choice 12 [12 max 13] [RI: 110]
+New point placement New York = 12
+PLACES MOVE ENERGY 11.600000000000001
+       1.5      0.87        40        15      0050
+Choice New York [1 max 1] [RI: 112]
+Choice 10 [10 max 13] [RI: 113]
+New point placement New York = 10
+PLACES MOVE ENERGY 11.200000000000001
+Choice Philadelphia [0 max 1] [RI: 115]
+Choice 11 [11 max 13] [RI: 116]
+New point placement Philadelphia = 11
+PLACES MOVE ENERGY 0.645
+Choice New York [1 max 1] [RI: 117]
+Choice 1 [1 max 13] [RI: 118]
+New point placement New York = 1
+PLACES MOVE ENERGY 0.645
+Choice New York [1 max 1] [RI: 119]
+Choice 11 [11 max 13] [RI: 120]
+New point placement New York = 11
+PLACES MOVE ENERGY 11.149999999999999
+Choice New York [1 max 1] [RI: 122]
+Choice 2 [2 max 13] [RI: 123]
+New point placement New York = 2
+PLACES MOVE ENERGY 0.6749999999999999
+Choice New York [1 max 1] [RI: 125]
+Choice 5 [5 max 13] [RI: 126]
+New point placement New York = 5
+PLACES MOVE ENERGY 1.475
+Choice Philadelphia [0 max 1] [RI: 128]
+Choice 1 [1 max 13] [RI: 129]
+New point placement Philadelphia = 1
+PLACES MOVE ENERGY 10.97
+Choice New York [1 max 1] [RI: 131]
+Choice 3 [3 max 13] [RI: 132]
+New point placement New York = 3
+PLACES MOVE ENERGY 0.75
+Choice Philadelphia [0 max 1] [RI: 133]
+Choice 10 [10 max 13] [RI: 134]
+New point placement Philadelphia = 10
+PLACES MOVE ENERGY 0.5750000000000001
+Choice Philadelphia [0 max 1] [RI: 135]
+Choice 12 [12 max 13] [RI: 136]
+New point placement Philadelphia = 12
+PLACES MOVE ENERGY 0.9750000000000001
+Choice New York [1 max 1] [RI: 138]
+Choice 1 [1 max 13] [RI: 139]
+New point placement New York = 1
+PLACES MOVE ENERGY 0.8700000000000001
+Choice Philadelphia [0 max 1] [RI: 140]
+Choice 0 [0 max 13] [RI: 141]
+New point placement Philadelphia = 0
+PLACES MOVE ENERGY 10.07
+Choice Philadelphia [0 max 1] [RI: 143]
+Choice 4 [4 max 13] [RI: 144]
+New point placement Philadelphia = 4
+PLACES MOVE ENERGY 10.27
+Choice Philadelphia [0 max 1] [RI: 146]
+Choice 10 [10 max 13] [RI: 147]
+New point placement Philadelphia = 10
+PLACES MOVE ENERGY 0.4700000000000001
+Choice New York [1 max 1] [RI: 148]
+Choice 0 [0 max 13] [RI: 149]
+New point placement New York = 0
+PLACES MOVE ENERGY 0.4000000000000001
+Choice New York [1 max 1] [RI: 150]
+Choice 11 [11 max 13] [RI: 151]
+New point placement New York = 11
+PLACES MOVE ENERGY 10.975
+Choice New York [1 max 1] [RI: 153]
+Choice 9 [9 max 13] [RI: 154]
+New point placement New York = 9
+PLACES MOVE ENERGY 10.870000000000001
+Choice Philadelphia [0 max 1] [RI: 156]
+Choice 13 [13 max 13] [RI: 157]
+New point placement Philadelphia = 13
+PLACES MOVE ENERGY 10.15
+Choice New York [1 max 1] [RI: 159]
+Choice 3 [3 max 13] [RI: 160]
+New point placement New York = 3
+PLACES MOVE ENERGY 0.5750000000000001
+Choice New York [1 max 1] [RI: 162]
+Choice 3 [3 max 13] [RI: 163]
+New point placement New York = 3
+PLACES MOVE ENERGY 0.5750000000000001
+       2.3     0.575        60        30      0050
+Choice New York [1 max 1] [RI: 164]
+Choice 13 [13 max 13] [RI: 165]
+New point placement New York = 13
+PLACES MOVE ENERGY 10.55
+Choice New York [1 max 1] [RI: 167]
+Choice 0 [0 max 13] [RI: 168]
+New point placement New York = 0
+PLACES MOVE ENERGY 0.4000000000000001
+Choice New York [1 max 1] [RI: 169]
+Choice 9 [9 max 13] [RI: 170]
+New point placement New York = 9
+PLACES MOVE ENERGY 10.870000000000001
+Choice Philadelphia [0 max 1] [RI: 172]
+Choice 0 [0 max 13] [RI: 173]
+New point placement Philadelphia = 0
+PLACES MOVE ENERGY 10
+Choice Philadelphia [0 max 1] [RI: 175]
+Choice 6 [6 max 13] [RI: 176]
+New point placement Philadelphia = 6
+PLACES MOVE ENERGY 11
+Choice Philadelphia [0 max 1] [RI: 178]
+Choice 2 [2 max 13] [RI: 179]
+New point placement Philadelphia = 2
+PLACES MOVE ENERGY 10.1
+Choice New York [1 max 1] [RI: 181]
+Choice 11 [11 max 13] [RI: 182]
+New point placement New York = 11
+PLACES MOVE ENERGY 10.975
+Choice New York [1 max 1] [RI: 184]
+Choice 11 [11 max 13] [RI: 185]
+New point placement New York = 11
+PLACES MOVE ENERGY 10.975
+Choice New York [1 max 1] [RI: 187]
+Choice 2 [2 max 13] [RI: 188]
+New point placement New York = 2
+PLACES MOVE ENERGY 0.5000000000000001
+Choice New York [1 max 1] [RI: 190]
+Choice 5 [5 max 13] [RI: 191]
+New point placement New York = 5
+PLACES MOVE ENERGY 1.3000000000000003
+Choice Philadelphia [0 max 1] [RI: 193]
+Choice 8 [8 max 13] [RI: 194]
+New point placement Philadelphia = 8
+PLACES MOVE ENERGY 1.4000000000000004
+Choice New York [1 max 1] [RI: 196]
+Choice 10 [10 max 13] [RI: 197]
+New point placement New York = 10
+PLACES MOVE ENERGY 10.9
+Choice New York [1 max 1] [RI: 199]
+Choice 10 [10 max 13] [RI: 200]
+New point placement New York = 10
+PLACES MOVE ENERGY 10.9
+Choice Philadelphia [0 max 1] [RI: 202]
+Choice 2 [2 max 13] [RI: 203]
+New point placement Philadelphia = 2
+PLACES MOVE ENERGY 11
+Choice New York [1 max 1] [RI: 205]
+Choice 1 [1 max 13] [RI: 206]
+New point placement New York = 1
+PLACES MOVE ENERGY 0.5700000000000003
+Choice Philadelphia [0 max 1] [RI: 207]
+Choice 4 [4 max 13] [RI: 208]
+New point placement Philadelphia = 4
+PLACES MOVE ENERGY 10.27
+Choice New York [1 max 1] [RI: 210]
+Choice 1 [1 max 13] [RI: 211]
+New point placement New York = 1
+PLACES MOVE ENERGY 0.5700000000000003
+Choice Philadelphia [0 max 1] [RI: 212]
+Choice 12 [12 max 13] [RI: 213]
+New point placement Philadelphia = 12
+PLACES MOVE ENERGY 0.8700000000000003
+Choice New York [1 max 1] [RI: 215]
+Choice 1 [1 max 13] [RI: 216]
+New point placement New York = 1
+PLACES MOVE ENERGY 0.8700000000000003
+Choice Philadelphia [0 max 1] [RI: 217]
+Choice 5 [5 max 13] [RI: 218]
+New point placement Philadelphia = 5
+PLACES MOVE ENERGY 10.97
+       3.5      0.87        40        10      0050
+Choice Philadelphia [0 max 1] [RI: 220]
+Choice 9 [9 max 13] [RI: 221]
+New point placement Philadelphia = 9
+PLACES MOVE ENERGY 0.5400000000000003
+Choice Philadelphia [0 max 1] [RI: 222]
+Choice 7 [7 max 13] [RI: 223]
+New point placement Philadelphia = 7
+PLACES MOVE ENERGY 0.6700000000000003
+Choice New York [1 max 1] [RI: 225]
+Choice 6 [6 max 13] [RI: 226]
+New point placement New York = 6
+PLACES MOVE ENERGY 11.6
+Choice Philadelphia [0 max 1] [RI: 228]
+Choice 13 [13 max 13] [RI: 229]
+New point placement Philadelphia = 13
+PLACES MOVE ENERGY 10.22
+Choice New York [1 max 1] [RI: 231]
+Choice 1 [1 max 13] [RI: 232]
+New point placement New York = 1
+PLACES MOVE ENERGY 0.6700000000000004
+Choice Philadelphia [0 max 1] [RI: 234]
+Choice 12 [12 max 13] [RI: 235]
+New point placement Philadelphia = 12
+PLACES MOVE ENERGY 0.8700000000000004
+Choice New York [1 max 1] [RI: 237]
+Choice 1 [1 max 13] [RI: 238]
+New point placement New York = 1
+PLACES MOVE ENERGY 0.8700000000000006
+Choice New York [1 max 1] [RI: 240]
+Choice 12 [12 max 13] [RI: 241]
+New point placement New York = 12
+PLACES MOVE ENERGY 11.600000000000001
+Choice New York [1 max 1] [RI: 243]
+Choice 1 [1 max 13] [RI: 244]
+New point placement New York = 1
+PLACES MOVE ENERGY 0.8700000000000014
+Choice Philadelphia [0 max 1] [RI: 245]
+Choice 10 [10 max 13] [RI: 246]
+New point placement Philadelphia = 10
+PLACES MOVE ENERGY 0.4700000000000014
+Choice Philadelphia [0 max 1] [RI: 247]
+Choice 7 [7 max 13] [RI: 248]
+New point placement Philadelphia = 7
+PLACES MOVE ENERGY 0.6700000000000014
+Choice Philadelphia [0 max 1] [RI: 250]
+Choice 6 [6 max 13] [RI: 251]
+New point placement Philadelphia = 6
+PLACES MOVE ENERGY 11.070000000000002
+Choice New York [1 max 1] [RI: 253]
+Choice 3 [3 max 13] [RI: 254]
+New point placement New York = 3
+PLACES MOVE ENERGY 0.7750000000000015
+Choice Philadelphia [0 max 1] [RI: 256]
+Choice 7 [7 max 13] [RI: 257]
+New point placement Philadelphia = 7
+PLACES MOVE ENERGY 0.7750000000000015
+Choice New York [1 max 1] [RI: 258]
+Choice 13 [13 max 13] [RI: 259]
+New point placement New York = 13
+PLACES MOVE ENERGY 10.750000000000002
+Choice Philadelphia [0 max 1] [RI: 261]
+Choice 1 [1 max 13] [RI: 262]
+New point placement Philadelphia = 1
+PLACES MOVE ENERGY 10.245000000000001
+Choice Philadelphia [0 max 1] [RI: 264]
+Choice 2 [2 max 13] [RI: 265]
+New point placement Philadelphia = 2
+PLACES MOVE ENERGY 10.275
+Choice New York [1 max 1] [RI: 267]
+Choice 5 [5 max 13] [RI: 268]
+New point placement New York = 5
+PLACES MOVE ENERGY 11.500000000000002
+Choice Philadelphia [0 max 1] [RI: 270]
+Choice 8 [8 max 13] [RI: 271]
+New point placement Philadelphia = 8
+PLACES MOVE ENERGY 0.6750000000000015
+Choice Philadelphia [0 max 1] [RI: 272]
+Choice 11 [11 max 13] [RI: 273]
+New point placement Philadelphia = 11
+PLACES MOVE ENERGY 0.7500000000000014
+       5.3      0.75        65        20      0050
+Choice Philadelphia [0 max 1] [RI: 275]
+Choice 6 [6 max 13] [RI: 276]
+New point placement Philadelphia = 6
+PLACES MOVE ENERGY 11.175
+Choice Philadelphia [0 max 1] [RI: 278]
+Choice 7 [7 max 13] [RI: 279]
+New point placement Philadelphia = 7
+PLACES MOVE ENERGY 0.7750000000000007
+Choice Philadelphia [0 max 1] [RI: 280]
+Choice 7 [7 max 13] [RI: 281]
+New point placement Philadelphia = 7
+PLACES MOVE ENERGY 0.7750000000000007
+Choice New York [1 max 1] [RI: 282]
+Choice 7 [7 max 13] [RI: 283]
+New point placement New York = 7
+PLACES MOVE ENERGY 11.200000000000001
+Choice New York [1 max 1] [RI: 285]
+Choice 7 [7 max 13] [RI: 286]
+New point placement New York = 7
+PLACES MOVE ENERGY 11.200000000000001
+Choice New York [1 max 1] [RI: 288]
+Choice 7 [7 max 13] [RI: 289]
+New point placement New York = 7
+PLACES MOVE ENERGY 11.200000000000001
+Choice Philadelphia [0 max 1] [RI: 291]
+Choice 2 [2 max 13] [RI: 292]
+New point placement Philadelphia = 2
+PLACES MOVE ENERGY 10.275
+Choice Philadelphia [0 max 1] [RI: 294]
+Choice 0 [0 max 13] [RI: 295]
+New point placement Philadelphia = 0
+PLACES MOVE ENERGY 10.175
+Choice Philadelphia [0 max 1] [RI: 297]
+Choice 1 [1 max 13] [RI: 298]
+New point placement Philadelphia = 1
+PLACES MOVE ENERGY 10.245000000000001
+Choice New York [1 max 1] [RI: 300]
+Choice 8 [8 max 13] [RI: 301]
+New point placement New York = 8
+PLACES MOVE ENERGY 11.100000000000001
+Choice New York [1 max 1] [RI: 303]
+Choice 9 [9 max 13] [RI: 304]
+New point placement New York = 9
+PLACES MOVE ENERGY 11.070000000000002
+Choice New York [1 max 1] [RI: 306]
+Choice 1 [1 max 13] [RI: 307]
+New point placement New York = 1
+PLACES MOVE ENERGY 0.6700000000000021
+Choice Philadelphia [0 max 1] [RI: 308]
+Choice 10 [10 max 13] [RI: 309]
+New point placement Philadelphia = 10
+PLACES MOVE ENERGY 0.4700000000000022
+Choice Philadelphia [0 max 1] [RI: 310]
+Choice 4 [4 max 13] [RI: 311]
+New point placement Philadelphia = 4
+PLACES MOVE ENERGY 10.270000000000001
+Choice New York [1 max 1] [RI: 313]
+Choice 6 [6 max 13] [RI: 314]
+New point placement New York = 6
+PLACES MOVE ENERGY 11.200000000000001
+Choice New York [1 max 1] [RI: 316]
+Choice 12 [12 max 13] [RI: 317]
+New point placement New York = 12
+PLACES MOVE ENERGY 11.000000000000002
+Choice Philadelphia [0 max 1] [RI: 318]
+Choice 8 [8 max 13] [RI: 319]
+New point placement Philadelphia = 8
+PLACES MOVE ENERGY 11.300000000000002
+Choice New York [1 max 1] [RI: 321]
+Choice 4 [4 max 13] [RI: 322]
+New point placement New York = 4
+PLACES MOVE ENERGY 0.7000000000000024
+Choice Philadelphia [0 max 1] [RI: 323]
+Choice 2 [2 max 13] [RI: 324]
+New point placement Philadelphia = 2
+PLACES MOVE ENERGY 10.300000000000002
+Choice New York [1 max 1] [RI: 326]
+Choice 8 [8 max 13] [RI: 327]
+New point placement New York = 8
+PLACES MOVE ENERGY 11.000000000000002
+         8        11        60        25      0050
+Choice Philadelphia [0 max 1] [RI: 329]
+Choice 6 [6 max 13] [RI: 330]
+New point placement Philadelphia = 6
+PLACES MOVE ENERGY 11.500000000000002
+Choice Philadelphia [0 max 1] [RI: 332]
+Choice 5 [5 max 13] [RI: 333]
+New point placement Philadelphia = 5
+PLACES MOVE ENERGY 11.400000000000002
+Choice Philadelphia [0 max 1] [RI: 334]
+Choice 9 [9 max 13] [RI: 335]
+New point placement Philadelphia = 9
+PLACES MOVE ENERGY 10.970000000000002
+Choice Philadelphia [0 max 1] [RI: 336]
+Choice 7 [7 max 13] [RI: 337]
+New point placement Philadelphia = 7
+PLACES MOVE ENERGY 11.100000000000001
+Choice Philadelphia [0 max 1] [RI: 339]
+Choice 9 [9 max 13] [RI: 340]
+New point placement Philadelphia = 9
+PLACES MOVE ENERGY 10.970000000000002
+Choice New York [1 max 1] [RI: 341]
+Choice 9 [9 max 13] [RI: 342]
+New point placement New York = 9
+PLACES MOVE ENERGY 10.940000000000003
+Choice New York [1 max 1] [RI: 343]
+Choice 10 [10 max 13] [RI: 344]
+New point placement New York = 10
+PLACES MOVE ENERGY 10.870000000000003
+Choice Philadelphia [0 max 1] [RI: 345]
+Choice 6 [6 max 13] [RI: 346]
+New point placement Philadelphia = 6
+PLACES MOVE ENERGY 11.400000000000002
+Choice Philadelphia [0 max 1] [RI: 348]
+Choice 2 [2 max 13] [RI: 349]
+New point placement Philadelphia = 2
+PLACES MOVE ENERGY 10.500000000000002
+Choice Philadelphia [0 max 1] [RI: 350]
+Choice 11 [11 max 13] [RI: 351]
+New point placement Philadelphia = 11
+PLACES MOVE ENERGY 10.975000000000001
+Choice New York [1 max 1] [RI: 353]
+Choice 3 [3 max 13] [RI: 354]
+New point placement New York = 3
+PLACES MOVE ENERGY 0.7500000000000013
+Choice New York [1 max 1] [RI: 355]
+Choice 0 [0 max 13] [RI: 356]
+New point placement New York = 0
+PLACES MOVE ENERGY 0.5750000000000013
+Choice Philadelphia [0 max 1] [RI: 357]
+Choice 6 [6 max 13] [RI: 358]
+New point placement Philadelphia = 6
+PLACES MOVE ENERGY 11.000000000000002
+Choice New York [1 max 1] [RI: 360]
+Choice 11 [11 max 13] [RI: 361]
+New point placement New York = 11
+PLACES MOVE ENERGY 11.15
+Choice New York [1 max 1] [RI: 363]
+Choice 9 [9 max 13] [RI: 364]
+New point placement New York = 9
+PLACES MOVE ENERGY 11.045000000000002
+Choice Philadelphia [0 max 1] [RI: 366]
+Choice 6 [6 max 13] [RI: 367]
+New point placement Philadelphia = 6
+PLACES MOVE ENERGY 11.470000000000002
+Choice New York [1 max 1] [RI: 369]
+Choice 3 [3 max 13] [RI: 370]
+New point placement New York = 3
+PLACES MOVE ENERGY 11.175000000000002
+Choice Philadelphia [0 max 1] [RI: 371]
+Choice 8 [8 max 13] [RI: 372]
+New point placement Philadelphia = 8
+PLACES MOVE ENERGY 0.6750000000000025
+Choice Philadelphia [0 max 1] [RI: 373]
+Choice 2 [2 max 13] [RI: 374]
+New point placement Philadelphia = 2
+PLACES MOVE ENERGY 10.275000000000002
+Choice Philadelphia [0 max 1] [RI: 376]
+Choice 2 [2 max 13] [RI: 377]
+New point placement Philadelphia = 2
+PLACES MOVE ENERGY 10.275000000000002
+        12    10.275        90        50      0050
+Choice Philadelphia [0 max 1] [RI: 378]
+Choice 2 [2 max 13] [RI: 379]
+New point placement Philadelphia = 2
+PLACES MOVE ENERGY 10.275000000000002
+Choice Philadelphia [0 max 1] [RI: 380]
+Choice 6 [6 max 13] [RI: 381]
+New point placement Philadelphia = 6
+PLACES MOVE ENERGY 11.175000000000002
+Choice Philadelphia [0 max 1] [RI: 383]
+Choice 12 [12 max 13] [RI: 384]
+New point placement Philadelphia = 12
+PLACES MOVE ENERGY 0.9750000000000025
+Choice New York [1 max 1] [RI: 385]
+Choice 11 [11 max 13] [RI: 386]
+New point placement New York = 11
+PLACES MOVE ENERGY 11.375000000000002
+Choice Philadelphia [0 max 1] [RI: 388]
+Choice 1 [1 max 13] [RI: 389]
+New point placement Philadelphia = 1
+PLACES MOVE ENERGY 10.245000000000003
+Choice Philadelphia [0 max 1] [RI: 391]
+Choice 0 [0 max 13] [RI: 392]
+New point placement Philadelphia = 0
+PLACES MOVE ENERGY 10.175000000000002
+Choice New York [1 max 1] [RI: 394]
+Choice 1 [1 max 13] [RI: 395]
+New point placement New York = 1
+PLACES MOVE ENERGY 0.8700000000000025
+Choice Philadelphia [0 max 1] [RI: 396]
+Choice 10 [10 max 13] [RI: 397]
+New point placement Philadelphia = 10
+PLACES MOVE ENERGY 0.4700000000000025
+Choice New York [1 max 1] [RI: 398]
+Choice 2 [2 max 13] [RI: 399]
+New point placement New York = 2
+PLACES MOVE ENERGY 0.5000000000000026
+Choice Philadelphia [0 max 1] [RI: 401]
+Choice 9 [9 max 13] [RI: 402]
+New point placement Philadelphia = 9
+PLACES MOVE ENERGY 0.5700000000000025
+Choice New York [1 max 1] [RI: 404]
+Choice 7 [7 max 13] [RI: 405]
+New point placement New York = 7
+PLACES MOVE ENERGY 11.070000000000002
+Choice New York [1 max 1] [RI: 407]
+Choice 4 [4 max 13] [RI: 408]
+New point placement New York = 4
+PLACES MOVE ENERGY 0.6700000000000021
+Choice New York [1 max 1] [RI: 409]
+Choice 6 [6 max 13] [RI: 410]
+New point placement New York = 6
+PLACES MOVE ENERGY 11.470000000000002
+Choice New York [1 max 1] [RI: 412]
+Choice 3 [3 max 13] [RI: 413]
+New point placement New York = 3
+PLACES MOVE ENERGY 0.6450000000000025
+Choice New York [1 max 1] [RI: 414]
+Choice 1 [1 max 13] [RI: 415]
+New point placement New York = 1
+PLACES MOVE ENERGY 0.5400000000000025
+Choice New York [1 max 1] [RI: 416]
+Choice 7 [7 max 13] [RI: 417]
+New point placement New York = 7
+PLACES MOVE ENERGY 11.070000000000002
+Choice New York [1 max 1] [RI: 419]
+Choice 1 [1 max 13] [RI: 420]
+New point placement New York = 1
+PLACES MOVE ENERGY 0.5400000000000025
+Choice New York [1 max 1] [RI: 421]
+Choice 9 [9 max 13] [RI: 422]
+New point placement New York = 9
+PLACES MOVE ENERGY 10.940000000000003
+Choice New York [1 max 1] [RI: 424]
+Choice 10 [10 max 13] [RI: 425]
+New point placement New York = 10
+PLACES MOVE ENERGY 10.870000000000003
+Choice Philadelphia [0 max 1] [RI: 426]
+Choice 4 [4 max 13] [RI: 427]
+New point placement Philadelphia = 4
+PLACES MOVE ENERGY 10.600000000000001
+        18      10.6        80        40      0050
+Choice New York [1 max 1] [RI: 428]
+Choice 4 [4 max 13] [RI: 429]
+New point placement New York = 4
+PLACES MOVE ENERGY 10.4
+Choice Philadelphia [0 max 1] [RI: 430]
+Choice 8 [8 max 13] [RI: 431]
+New point placement Philadelphia = 8
+PLACES MOVE ENERGY 0.7000000000000004
+Choice New York [1 max 1] [RI: 432]
+Choice 5 [5 max 13] [RI: 433]
+New point placement New York = 5
+PLACES MOVE ENERGY 1.4000000000000004
+Choice Philadelphia [0 max 1] [RI: 435]
+Choice 6 [6 max 13] [RI: 436]
+New point placement Philadelphia = 6
+PLACES MOVE ENERGY 11.9
+Choice Philadelphia [0 max 1] [RI: 438]
+Choice 5 [5 max 13] [RI: 439]
+New point placement Philadelphia = 5
+PLACES MOVE ENERGY 11.8
+Choice Philadelphia [0 max 1] [RI: 440]
+Choice 0 [0 max 13] [RI: 441]
+New point placement Philadelphia = 0
+PLACES MOVE ENERGY 10.9
+Choice Philadelphia [0 max 1] [RI: 442]
+Choice 9 [9 max 13] [RI: 443]
+New point placement Philadelphia = 9
+PLACES MOVE ENERGY 1.3700000000000003
+Choice Philadelphia [0 max 1] [RI: 444]
+Choice 0 [0 max 13] [RI: 445]
+New point placement Philadelphia = 0
+PLACES MOVE ENERGY 10.9
+Choice New York [1 max 1] [RI: 447]
+Choice 5 [5 max 13] [RI: 448]
+New point placement New York = 5
+PLACES MOVE ENERGY 1.3700000000000003
+Choice Philadelphia [0 max 1] [RI: 449]
+Choice 11 [11 max 13] [RI: 450]
+New point placement Philadelphia = 11
+PLACES MOVE ENERGY 1.4750000000000003
+Choice Philadelphia [0 max 1] [RI: 452]
+Choice 11 [11 max 13] [RI: 453]
+New point placement Philadelphia = 11
+PLACES MOVE ENERGY 1.4750000000000003
+Choice New York [1 max 1] [RI: 454]
+Choice 13 [13 max 13] [RI: 455]
+New point placement New York = 13
+PLACES MOVE ENERGY 10.725000000000001
+Choice New York [1 max 1] [RI: 457]
+Choice 11 [11 max 13] [RI: 458]
+New point placement New York = 11
+PLACES MOVE ENERGY 11.15
+Choice Philadelphia [0 max 1] [RI: 460]
+Choice 1 [1 max 13] [RI: 461]
+New point placement Philadelphia = 1
+PLACES MOVE ENERGY 10.645000000000001
+Choice New York [1 max 1] [RI: 462]
+Choice 3 [3 max 13] [RI: 463]
+New point placement New York = 3
+PLACES MOVE ENERGY 10.245000000000003
+Choice New York [1 max 1] [RI: 464]
+Choice 1 [1 max 13] [RI: 465]
+New point placement New York = 1
+PLACES MOVE ENERGY 10.140000000000002
+Choice New York [1 max 1] [RI: 466]
+Choice 4 [4 max 13] [RI: 467]
+New point placement New York = 4
+PLACES MOVE ENERGY 10.270000000000001
+Choice Philadelphia [0 max 1] [RI: 469]
+Choice 2 [2 max 13] [RI: 470]
+New point placement Philadelphia = 2
+PLACES MOVE ENERGY 10.3
+Choice New York [1 max 1] [RI: 472]
+Choice 4 [4 max 13] [RI: 473]
+New point placement New York = 4
+PLACES MOVE ENERGY 10.3
+Choice New York [1 max 1] [RI: 474]
+Choice 2 [2 max 13] [RI: 475]
+New point placement New York = 2
+PLACES MOVE ENERGY 10.200000000000001
+        27      10.2        90        45      0050
+Choice Philadelphia [0 max 1] [RI: 476]
+Choice 5 [5 max 13] [RI: 477]
+New point placement Philadelphia = 5
+PLACES MOVE ENERGY 11.000000000000002
+Choice Philadelphia [0 max 1] [RI: 479]
+Choice 0 [0 max 13] [RI: 480]
+New point placement Philadelphia = 0
+PLACES MOVE ENERGY 10.100000000000001
+Choice Philadelphia [0 max 1] [RI: 481]
+Choice 5 [5 max 13] [RI: 482]
+New point placement Philadelphia = 5
+PLACES MOVE ENERGY 11.000000000000002
+Choice New York [1 max 1] [RI: 484]
+Choice 11 [11 max 13] [RI: 485]
+New point placement New York = 11
+PLACES MOVE ENERGY 11.475000000000001
+Choice Philadelphia [0 max 1] [RI: 487]
+Choice 10 [10 max 13] [RI: 488]
+New point placement Philadelphia = 10
+PLACES MOVE ENERGY 10.975000000000001
+Choice Philadelphia [0 max 1] [RI: 489]
+Choice 7 [7 max 13] [RI: 490]
+New point placement Philadelphia = 7
+PLACES MOVE ENERGY 11.175
+Choice Philadelphia [0 max 1] [RI: 492]
+Choice 3 [3 max 13] [RI: 493]
+New point placement Philadelphia = 3
+PLACES MOVE ENERGY 10.750000000000002
+Choice Philadelphia [0 max 1] [RI: 494]
+Choice 6 [6 max 13] [RI: 495]
+New point placement Philadelphia = 6
+PLACES MOVE ENERGY 11.575000000000001
+Choice Philadelphia [0 max 1] [RI: 497]
+Choice 0 [0 max 13] [RI: 498]
+New point placement Philadelphia = 0
+PLACES MOVE ENERGY 10.575000000000001
+Choice New York [1 max 1] [RI: 499]
+Choice 4 [4 max 13] [RI: 500]
+New point placement New York = 4
+PLACES MOVE ENERGY 10.200000000000001
+Choice New York [1 max 1] [RI: 501]
+Choice 10 [10 max 13] [RI: 502]
+New point placement New York = 10
+PLACES MOVE ENERGY 10.400000000000002
+Choice New York [1 max 1] [RI: 504]
+Choice 0 [0 max 13] [RI: 505]
+New point placement New York = 0
+PLACES MOVE ENERGY 10.000000000000002
+Choice New York [1 max 1] [RI: 506]
+Choice 6 [6 max 13] [RI: 507]
+New point placement New York = 6
+PLACES MOVE ENERGY 11.000000000000002
+Choice Philadelphia [0 max 1] [RI: 509]
+Choice 13 [13 max 13] [RI: 510]
+New point placement Philadelphia = 13
+PLACES MOVE ENERGY 11.150000000000002
+Choice New York [1 max 1] [RI: 512]
+Choice 9 [9 max 13] [RI: 513]
+New point placement New York = 9
+PLACES MOVE ENERGY 10.620000000000003
+Choice Philadelphia [0 max 1] [RI: 514]
+Choice 9 [9 max 13] [RI: 515]
+New point placement Philadelphia = 9
+PLACES MOVE ENERGY 10.940000000000003
+Choice New York [1 max 1] [RI: 517]
+Choice 1 [1 max 13] [RI: 518]
+New point placement New York = 1
+PLACES MOVE ENERGY 0.5400000000000031
+Choice Philadelphia [0 max 1] [RI: 519]
+Choice 7 [7 max 13] [RI: 520]
+New point placement Philadelphia = 7
+PLACES MOVE ENERGY 0.6700000000000031
+Choice New York [1 max 1] [RI: 522]
+Choice 11 [11 max 13] [RI: 523]
+New point placement New York = 11
+PLACES MOVE ENERGY 11.175000000000002
+Choice Philadelphia [0 max 1] [RI: 525]
+Choice 11 [11 max 13] [RI: 526]
+New point placement Philadelphia = 11
+PLACES MOVE ENERGY 11.150000000000002
+        41     11.15       100        45      0050
+Improvement loop
+Choice Philadelphia [0 max 1] [RI: 527]
+Choice 3 [3 max 13] [RI: 528]
+New point placement Philadelphia = 3
+PLACES MOVE ENERGY 10.750000000000004
+Choice Philadelphia [0 max 1] [RI: 529]
+Choice 10 [10 max 13] [RI: 530]
+New point placement Philadelphia = 10
+PLACES MOVE ENERGY 10.975000000000003
+Choice New York [1 max 1] [RI: 532]
+Choice 2 [2 max 13] [RI: 533]
+New point placement New York = 2
+PLACES MOVE ENERGY 0.5000000000000032
+Choice New York [1 max 1] [RI: 534]
+Choice 10 [10 max 13] [RI: 535]
+New point placement New York = 10
+PLACES MOVE ENERGY 10.800000000000004
+Choice Philadelphia [0 max 1] [RI: 537]
+Choice 12 [12 max 13] [RI: 538]
+New point placement Philadelphia = 12
+PLACES MOVE ENERGY 0.9000000000000032
+Choice New York [1 max 1] [RI: 540]
+Choice 4 [4 max 13] [RI: 541]
+New point placement New York = 4
+PLACES MOVE ENERGY 1.0000000000000033
+Choice Philadelphia [0 max 1] [RI: 543]
+Choice 0 [0 max 13] [RI: 544]
+New point placement Philadelphia = 0
+PLACES MOVE ENERGY 10.200000000000003
+Choice New York [1 max 1] [RI: 546]
+Choice 5 [5 max 13] [RI: 547]
+New point placement New York = 5
+PLACES MOVE ENERGY 1.7000000000000033
+Choice New York [1 max 1] [RI: 549]
+Choice 8 [8 max 13] [RI: 550]
+New point placement New York = 8
+PLACES MOVE ENERGY 11.300000000000002
+Choice Philadelphia [0 max 1] [RI: 552]
+Choice 7 [7 max 13] [RI: 553]
+New point placement Philadelphia = 7
+PLACES MOVE ENERGY 11.100000000000001
+Choice New York [1 max 1] [RI: 554]
+Choice 9 [9 max 13] [RI: 555]
+New point placement New York = 9
+PLACES MOVE ENERGY 11.070000000000002
+Choice Philadelphia [0 max 1] [RI: 556]
+Choice 9 [9 max 13] [RI: 557]
+New point placement Philadelphia = 9
+PLACES MOVE ENERGY 10.940000000000003
+Choice Philadelphia [0 max 1] [RI: 558]
+Choice 1 [1 max 13] [RI: 559]
+New point placement Philadelphia = 1
+PLACES MOVE ENERGY 10.540000000000003
+Choice Philadelphia [0 max 1] [RI: 560]
+Choice 3 [3 max 13] [RI: 561]
+New point placement Philadelphia = 3
+PLACES MOVE ENERGY 10.645000000000003
+Choice New York [1 max 1] [RI: 563]
+Choice 5 [5 max 13] [RI: 564]
+New point placement New York = 5
+PLACES MOVE ENERGY 11.075000000000003
+Choice New York [1 max 1] [RI: 566]
+Choice 12 [12 max 13] [RI: 567]
+New point placement New York = 12
+PLACES MOVE ENERGY 10.975000000000003
+Choice New York [1 max 1] [RI: 568]
+Choice 5 [5 max 13] [RI: 569]
+New point placement New York = 5
+PLACES MOVE ENERGY 11.075000000000003
+Choice New York [1 max 1] [RI: 571]
+Choice 0 [0 max 13] [RI: 572]
+New point placement New York = 0
+PLACES MOVE ENERGY 10.175000000000002
+Choice New York [1 max 1] [RI: 573]
+Choice 10 [10 max 13] [RI: 574]
+New point placement New York = 10
+PLACES MOVE ENERGY 10.575000000000003
+Choice New York [1 max 1] [RI: 576]
+Choice 13 [13 max 13] [RI: 577]
+New point placement New York = 13
+PLACES MOVE ENERGY 10.325000000000003
+        27    10.325        90        45      0050
+Choice New York [1 max 1] [RI: 578]
+Choice 11 [11 max 13] [RI: 579]
+New point placement New York = 11
+PLACES MOVE ENERGY 10.750000000000002
+Choice New York [1 max 1] [RI: 581]
+Choice 8 [8 max 13] [RI: 582]
+New point placement New York = 8
+PLACES MOVE ENERGY 10.675000000000002
+Choice New York [1 max 1] [RI: 583]
+Choice 5 [5 max 13] [RI: 584]
+New point placement New York = 5
+PLACES MOVE ENERGY 11.075000000000003
+Choice Philadelphia [0 max 1] [RI: 586]
+Choice 11 [11 max 13] [RI: 587]
+New point placement Philadelphia = 11
+PLACES MOVE ENERGY 1.4750000000000028
+Choice New York [1 max 1] [RI: 588]
+Choice 10 [10 max 13] [RI: 589]
+New point placement New York = 10
+PLACES MOVE ENERGY 10.975000000000003
+Choice Philadelphia [0 max 1] [RI: 591]
+Choice 1 [1 max 13] [RI: 592]
+New point placement Philadelphia = 1
+PLACES MOVE ENERGY 10.470000000000004
+Choice Philadelphia [0 max 1] [RI: 593]
+Choice 10 [10 max 13] [RI: 594]
+New point placement Philadelphia = 10
+PLACES MOVE ENERGY 10.800000000000004
+Choice Philadelphia [0 max 1] [RI: 596]
+Choice 3 [3 max 13] [RI: 597]
+New point placement Philadelphia = 3
+PLACES MOVE ENERGY 10.575000000000005
+Choice Philadelphia [0 max 1] [RI: 598]
+Choice 12 [12 max 13] [RI: 599]
+New point placement Philadelphia = 12
+PLACES MOVE ENERGY 11.200000000000005
+Choice Philadelphia [0 max 1] [RI: 601]
+Choice 2 [2 max 13] [RI: 602]
+New point placement Philadelphia = 2
+PLACES MOVE ENERGY 10.500000000000004
+Choice Philadelphia [0 max 1] [RI: 603]
+Choice 0 [0 max 13] [RI: 604]
+New point placement Philadelphia = 0
+PLACES MOVE ENERGY 10.400000000000004
+Choice Philadelphia [0 max 1] [RI: 605]
+Choice 0 [0 max 13] [RI: 606]
+New point placement Philadelphia = 0
+PLACES MOVE ENERGY 10.400000000000004
+Choice Philadelphia [0 max 1] [RI: 607]
+Choice 10 [10 max 13] [RI: 608]
+New point placement Philadelphia = 10
+PLACES MOVE ENERGY 10.800000000000004
+Choice Philadelphia [0 max 1] [RI: 610]
+Choice 9 [9 max 13] [RI: 611]
+New point placement Philadelphia = 9
+PLACES MOVE ENERGY 10.870000000000005
+Choice New York [1 max 1] [RI: 613]
+Choice 1 [1 max 13] [RI: 614]
+New point placement New York = 1
+PLACES MOVE ENERGY 0.5400000000000045
+Choice Philadelphia [0 max 1] [RI: 615]
+Choice 11 [11 max 13] [RI: 616]
+New point placement Philadelphia = 11
+PLACES MOVE ENERGY 0.6450000000000045
+Choice Philadelphia [0 max 1] [RI: 618]
+Choice 3 [3 max 13] [RI: 619]
+New point placement Philadelphia = 3
+PLACES MOVE ENERGY 10.245000000000005
+Choice New York [1 max 1] [RI: 621]
+Choice 1 [1 max 13] [RI: 622]
+New point placement New York = 1
+PLACES MOVE ENERGY 10.245000000000005
+Choice Philadelphia [0 max 1] [RI: 623]
+Choice 10 [10 max 13] [RI: 624]
+New point placement Philadelphia = 10
+PLACES MOVE ENERGY 0.4700000000000046
+Choice Philadelphia [0 max 1] [RI: 625]
+Choice 13 [13 max 13] [RI: 626]
+New point placement Philadelphia = 13
+PLACES MOVE ENERGY 10.220000000000004
+        18     10.22       100        40      0050
+Choice New York [1 max 1] [RI: 628]
+Choice 6 [6 max 13] [RI: 629]
+New point placement New York = 6
+PLACES MOVE ENERGY 11.150000000000004
+Choice New York [1 max 1] [RI: 631]
+Choice 11 [11 max 13] [RI: 632]
+New point placement New York = 11
+PLACES MOVE ENERGY 10.725000000000003
+Choice Philadelphia [0 max 1] [RI: 634]
+Choice 6 [6 max 13] [RI: 635]
+New point placement Philadelphia = 6
+PLACES MOVE ENERGY 11.575000000000003
+Choice New York [1 max 1] [RI: 637]
+Choice 10 [10 max 13] [RI: 638]
+New point placement New York = 10
+PLACES MOVE ENERGY 10.550000000000004
+Choice Philadelphia [0 max 1] [RI: 639]
+Choice 9 [9 max 13] [RI: 640]
+New point placement Philadelphia = 9
+PLACES MOVE ENERGY 10.870000000000005
+Choice New York [1 max 1] [RI: 642]
+Choice 6 [6 max 13] [RI: 643]
+New point placement New York = 6
+PLACES MOVE ENERGY 11.470000000000004
+Choice New York [1 max 1] [RI: 645]
+Choice 9 [9 max 13] [RI: 646]
+New point placement New York = 9
+PLACES MOVE ENERGY 10.940000000000005
+Choice New York [1 max 1] [RI: 647]
+Choice 11 [11 max 13] [RI: 648]
+New point placement New York = 11
+PLACES MOVE ENERGY 11.045000000000003
+Choice Philadelphia [0 max 1] [RI: 650]
+Choice 12 [12 max 13] [RI: 651]
+New point placement Philadelphia = 12
+PLACES MOVE ENERGY 11.375000000000004
+Choice Philadelphia [0 max 1] [RI: 653]
+Choice 7 [7 max 13] [RI: 654]
+New point placement Philadelphia = 7
+PLACES MOVE ENERGY 11.175000000000002
+Choice New York [1 max 1] [RI: 655]
+Choice 0 [0 max 13] [RI: 656]
+New point placement New York = 0
+PLACES MOVE ENERGY 0.6000000000000025
+Choice New York [1 max 1] [RI: 657]
+Choice 4 [4 max 13] [RI: 658]
+New point placement New York = 4
+PLACES MOVE ENERGY 0.8000000000000025
+Choice New York [1 max 1] [RI: 660]
+Choice 10 [10 max 13] [RI: 661]
+New point placement New York = 10
+PLACES MOVE ENERGY 11.000000000000004
+Choice Philadelphia [0 max 1] [RI: 663]
+Choice 9 [9 max 13] [RI: 664]
+New point placement Philadelphia = 9
+PLACES MOVE ENERGY 0.6700000000000025
+Choice Philadelphia [0 max 1] [RI: 665]
+Choice 3 [3 max 13] [RI: 666]
+New point placement Philadelphia = 3
+PLACES MOVE ENERGY 10.375000000000004
+Choice New York [1 max 1] [RI: 668]
+Choice 4 [4 max 13] [RI: 669]
+New point placement New York = 4
+PLACES MOVE ENERGY 10.375000000000004
+Choice New York [1 max 1] [RI: 670]
+Choice 5 [5 max 13] [RI: 671]
+New point placement New York = 5
+PLACES MOVE ENERGY 11.075000000000005
+Choice New York [1 max 1] [RI: 673]
+Choice 7 [7 max 13] [RI: 674]
+New point placement New York = 7
+PLACES MOVE ENERGY 10.775000000000004
+Choice New York [1 max 1] [RI: 675]
+Choice 11 [11 max 13] [RI: 676]
+New point placement New York = 11
+PLACES MOVE ENERGY 10.750000000000004
+Choice New York [1 max 1] [RI: 677]
+Choice 8 [8 max 13] [RI: 678]
+New point placement New York = 8
+PLACES MOVE ENERGY 10.675000000000004
+        12    10.675        85        40      0050
+Choice Philadelphia [0 max 1] [RI: 679]
+Choice 10 [10 max 13] [RI: 680]
+New point placement Philadelphia = 10
+PLACES MOVE ENERGY 10.900000000000004
+Choice Philadelphia [0 max 1] [RI: 682]
+Choice 6 [6 max 13] [RI: 683]
+New point placement Philadelphia = 6
+PLACES MOVE ENERGY 11.500000000000004
+Choice New York [1 max 1] [RI: 685]
+Choice 12 [12 max 13] [RI: 686]
+New point placement New York = 12
+PLACES MOVE ENERGY 11.800000000000004
+Choice New York [1 max 1] [RI: 688]
+Choice 8 [8 max 13] [RI: 689]
+New point placement New York = 8
+PLACES MOVE ENERGY 11.500000000000004
+Choice Philadelphia [0 max 1] [RI: 690]
+Choice 0 [0 max 13] [RI: 691]
+New point placement Philadelphia = 0
+PLACES MOVE ENERGY 10.500000000000004
+Choice Philadelphia [0 max 1] [RI: 692]
+Choice 10 [10 max 13] [RI: 693]
+New point placement Philadelphia = 10
+PLACES MOVE ENERGY 10.900000000000004
+Choice Philadelphia [0 max 1] [RI: 695]
+Choice 6 [6 max 13] [RI: 696]
+New point placement Philadelphia = 6
+PLACES MOVE ENERGY 11.500000000000004
+Choice New York [1 max 1] [RI: 698]
+Choice 11 [11 max 13] [RI: 699]
+New point placement New York = 11
+PLACES MOVE ENERGY 11.575000000000003
+Choice Philadelphia [0 max 1] [RI: 701]
+Choice 3 [3 max 13] [RI: 702]
+New point placement Philadelphia = 3
+PLACES MOVE ENERGY 10.750000000000004
+Choice New York [1 max 1] [RI: 703]
+Choice 12 [12 max 13] [RI: 704]
+New point placement New York = 12
+PLACES MOVE ENERGY 10.975000000000005
+Choice Philadelphia [0 max 1] [RI: 706]
+Choice 1 [1 max 13] [RI: 707]
+New point placement Philadelphia = 1
+PLACES MOVE ENERGY 10.870000000000005
+Choice New York [1 max 1] [RI: 708]
+Choice 12 [12 max 13] [RI: 709]
+New point placement New York = 12
+PLACES MOVE ENERGY 10.870000000000005
+Choice New York [1 max 1] [RI: 710]
+Choice 8 [8 max 13] [RI: 711]
+New point placement New York = 8
+PLACES MOVE ENERGY 10.570000000000004
+Choice Philadelphia [0 max 1] [RI: 712]
+Choice 9 [9 max 13] [RI: 713]
+New point placement Philadelphia = 9
+PLACES MOVE ENERGY 10.970000000000004
+Choice New York [1 max 1] [RI: 715]
+Choice 12 [12 max 13] [RI: 716]
+New point placement New York = 12
+PLACES MOVE ENERGY 11.270000000000005
+Choice Philadelphia [0 max 1] [RI: 718]
+Choice 3 [3 max 13] [RI: 719]
+New point placement Philadelphia = 3
+PLACES MOVE ENERGY 10.975000000000005
+Choice New York [1 max 1] [RI: 720]
+Choice 3 [3 max 13] [RI: 721]
+New point placement New York = 3
+PLACES MOVE ENERGY 10.350000000000005
+Choice New York [1 max 1] [RI: 722]
+Choice 7 [7 max 13] [RI: 723]
+New point placement New York = 7
+PLACES MOVE ENERGY 10.775000000000004
+Choice New York [1 max 1] [RI: 725]
+Choice 0 [0 max 13] [RI: 726]
+New point placement New York = 0
+PLACES MOVE ENERGY 10.175000000000004
+Choice Philadelphia [0 max 1] [RI: 727]
+Choice 9 [9 max 13] [RI: 728]
+New point placement Philadelphia = 9
+PLACES MOVE ENERGY 0.47000000000000425
+         8      0.47       100        45      0050
+Choice Philadelphia [0 max 1] [RI: 729]
+Choice 12 [12 max 13] [RI: 730]
+New point placement Philadelphia = 12
+PLACES MOVE ENERGY 10.800000000000004
+Choice Philadelphia [0 max 1] [RI: 732]
+Choice 1 [1 max 13] [RI: 733]
+New point placement Philadelphia = 1
+PLACES MOVE ENERGY 10.070000000000004
+Choice New York [1 max 1] [RI: 735]
+Choice 2 [2 max 13] [RI: 736]
+New point placement New York = 2
+PLACES MOVE ENERGY 0.5700000000000043
+Choice Philadelphia [0 max 1] [RI: 738]
+Choice 5 [5 max 13] [RI: 739]
+New point placement Philadelphia = 5
+PLACES MOVE ENERGY 11.000000000000005
+Choice New York [1 max 1] [RI: 741]
+Choice 12 [12 max 13] [RI: 742]
+New point placement New York = 12
+PLACES MOVE ENERGY 11.270000000000005
+Choice New York [1 max 1] [RI: 744]
+Choice 1 [1 max 13] [RI: 745]
+New point placement New York = 1
+PLACES MOVE ENERGY 0.5400000000000049
+Choice Philadelphia [0 max 1] [RI: 746]
+Choice 1 [1 max 13] [RI: 747]
+New point placement Philadelphia = 1
+PLACES MOVE ENERGY 10.140000000000006
+Choice Philadelphia [0 max 1] [RI: 749]
+Choice 2 [2 max 13] [RI: 750]
+New point placement Philadelphia = 2
+PLACES MOVE ENERGY 10.170000000000005
+Choice Philadelphia [0 max 1] [RI: 752]
+Choice 4 [4 max 13] [RI: 753]
+New point placement Philadelphia = 4
+PLACES MOVE ENERGY 10.270000000000005
+Choice New York [1 max 1] [RI: 755]
+Choice 9 [9 max 13] [RI: 756]
+New point placement New York = 9
+PLACES MOVE ENERGY 10.570000000000006
+Choice New York [1 max 1] [RI: 758]
+Choice 7 [7 max 13] [RI: 759]
+New point placement New York = 7
+PLACES MOVE ENERGY 10.700000000000005
+Choice New York [1 max 1] [RI: 761]
+Choice 7 [7 max 13] [RI: 762]
+New point placement New York = 7
+PLACES MOVE ENERGY 10.700000000000005
+Choice New York [1 max 1] [RI: 763]
+Choice 1 [1 max 13] [RI: 764]
+New point placement New York = 1
+PLACES MOVE ENERGY 10.170000000000005
+Choice New York [1 max 1] [RI: 765]
+Choice 5 [5 max 13] [RI: 766]
+New point placement New York = 5
+PLACES MOVE ENERGY 11.000000000000005
+Choice Philadelphia [0 max 1] [RI: 768]
+Choice 0 [0 max 13] [RI: 769]
+New point placement Philadelphia = 0
+PLACES MOVE ENERGY 10.900000000000006
+Choice Philadelphia [0 max 1] [RI: 770]
+Choice 9 [9 max 13] [RI: 771]
+New point placement Philadelphia = 9
+PLACES MOVE ENERGY 1.3700000000000057
+Choice Philadelphia [0 max 1] [RI: 772]
+Choice 4 [4 max 13] [RI: 773]
+New point placement Philadelphia = 4
+PLACES MOVE ENERGY 11.100000000000005
+Choice New York [1 max 1] [RI: 775]
+Choice 8 [8 max 13] [RI: 776]
+New point placement New York = 8
+PLACES MOVE ENERGY 10.970000000000006
+Choice Philadelphia [0 max 1] [RI: 778]
+Choice 3 [3 max 13] [RI: 779]
+New point placement Philadelphia = 3
+PLACES MOVE ENERGY 11.075000000000006
+Choice Philadelphia [0 max 1] [RI: 781]
+Choice 9 [9 max 13] [RI: 782]
+New point placement Philadelphia = 9
+PLACES MOVE ENERGY 1.3700000000000057
+       5.3      1.37        65        20      0050
+Choice Philadelphia [0 max 1] [RI: 783]
+Choice 0 [0 max 13] [RI: 784]
+New point placement Philadelphia = 0
+PLACES MOVE ENERGY 10.900000000000006
+Choice Philadelphia [0 max 1] [RI: 786]
+Choice 3 [3 max 13] [RI: 787]
+New point placement Philadelphia = 3
+PLACES MOVE ENERGY 11.075000000000006
+Choice New York [1 max 1] [RI: 789]
+Choice 5 [5 max 13] [RI: 790]
+New point placement New York = 5
+PLACES MOVE ENERGY 1.3700000000000057
+Choice Philadelphia [0 max 1] [RI: 791]
+Choice 3 [3 max 13] [RI: 792]
+New point placement Philadelphia = 3
+PLACES MOVE ENERGY 11.075000000000006
+Choice Philadelphia [0 max 1] [RI: 794]
+Choice 5 [5 max 13] [RI: 795]
+New point placement Philadelphia = 5
+PLACES MOVE ENERGY 11.800000000000006
+Choice Philadelphia [0 max 1] [RI: 797]
+Choice 2 [2 max 13] [RI: 798]
+New point placement Philadelphia = 2
+PLACES MOVE ENERGY 11.000000000000005
+Choice New York [1 max 1] [RI: 800]
+Choice 4 [4 max 13] [RI: 801]
+New point placement New York = 4
+PLACES MOVE ENERGY 0.6700000000000057
+Choice Philadelphia [0 max 1] [RI: 802]
+Choice 9 [9 max 13] [RI: 803]
+New point placement Philadelphia = 9
+PLACES MOVE ENERGY 0.6700000000000057
+Choice Philadelphia [0 max 1] [RI: 804]
+Choice 10 [10 max 13] [RI: 805]
+New point placement Philadelphia = 10
+PLACES MOVE ENERGY 0.6000000000000058
+Choice New York [1 max 1] [RI: 806]
+Choice 8 [8 max 13] [RI: 807]
+New point placement New York = 8
+PLACES MOVE ENERGY 10.900000000000006
+Choice New York [1 max 1] [RI: 809]
+Choice 4 [4 max 13] [RI: 810]
+New point placement New York = 4
+PLACES MOVE ENERGY 0.6000000000000058
+Choice New York [1 max 1] [RI: 811]
+Choice 12 [12 max 13] [RI: 812]
+New point placement New York = 12
+PLACES MOVE ENERGY 11.200000000000006
+Choice New York [1 max 1] [RI: 814]
+Choice 3 [3 max 13] [RI: 815]
+New point placement New York = 3
+PLACES MOVE ENERGY 0.5750000000000057
+Choice New York [1 max 1] [RI: 816]
+Choice 3 [3 max 13] [RI: 817]
+New point placement New York = 3
+PLACES MOVE ENERGY 0.5750000000000057
+Choice New York [1 max 1] [RI: 818]
+Choice 8 [8 max 13] [RI: 819]
+New point placement New York = 8
+PLACES MOVE ENERGY 10.900000000000006
+Choice Philadelphia [0 max 1] [RI: 821]
+Choice 13 [13 max 13] [RI: 822]
+New point placement Philadelphia = 13
+PLACES MOVE ENERGY 10.325000000000006
+Choice Philadelphia [0 max 1] [RI: 824]
+Choice 3 [3 max 13] [RI: 825]
+New point placement Philadelphia = 3
+PLACES MOVE ENERGY 10.350000000000007
+Choice Philadelphia [0 max 1] [RI: 827]
+Choice 5 [5 max 13] [RI: 828]
+New point placement Philadelphia = 5
+PLACES MOVE ENERGY 11.075000000000006
+Choice Philadelphia [0 max 1] [RI: 830]
+Choice 5 [5 max 13] [RI: 831]
+New point placement Philadelphia = 5
+PLACES MOVE ENERGY 11.075000000000006
+Choice New York [1 max 1] [RI: 833]
+Choice 4 [4 max 13] [RI: 834]
+New point placement New York = 4
+PLACES MOVE ENERGY 0.6000000000000058
+       3.5       0.6        40        15      0050
+Choice Philadelphia [0 max 1] [RI: 836]
+Choice 10 [10 max 13] [RI: 837]
+New point placement Philadelphia = 10
+PLACES MOVE ENERGY 0.6000000000000058
+Choice Philadelphia [0 max 1] [RI: 838]
+Choice 9 [9 max 13] [RI: 839]
+New point placement Philadelphia = 9
+PLACES MOVE ENERGY 0.6700000000000057
+Choice Philadelphia [0 max 1] [RI: 841]
+Choice 2 [2 max 13] [RI: 842]
+New point placement Philadelphia = 2
+PLACES MOVE ENERGY 10.300000000000006
+Choice Philadelphia [0 max 1] [RI: 844]
+Choice 8 [8 max 13] [RI: 845]
+New point placement Philadelphia = 8
+PLACES MOVE ENERGY 0.7000000000000057
+Choice New York [1 max 1] [RI: 847]
+Choice 10 [10 max 13] [RI: 848]
+New point placement New York = 10
+PLACES MOVE ENERGY 10.900000000000006
+Choice Philadelphia [0 max 1] [RI: 850]
+Choice 13 [13 max 13] [RI: 851]
+New point placement Philadelphia = 13
+PLACES MOVE ENERGY 10.350000000000007
+Choice New York [1 max 1] [RI: 853]
+Choice 5 [5 max 13] [RI: 854]
+New point placement New York = 5
+PLACES MOVE ENERGY 1.4000000000000057
+Choice New York [1 max 1] [RI: 856]
+Choice 9 [9 max 13] [RI: 857]
+New point placement New York = 9
+PLACES MOVE ENERGY 10.970000000000006
+Choice Philadelphia [0 max 1] [RI: 859]
+Choice 2 [2 max 13] [RI: 860]
+New point placement Philadelphia = 2
+PLACES MOVE ENERGY 11.000000000000005
+Choice New York [1 max 1] [RI: 862]
+Choice 3 [3 max 13] [RI: 863]
+New point placement New York = 3
+PLACES MOVE ENERGY 0.6750000000000056
+Choice New York [1 max 1] [RI: 864]
+Choice 2 [2 max 13] [RI: 865]
+New point placement New York = 2
+PLACES MOVE ENERGY 0.6000000000000055
+Choice New York [1 max 1] [RI: 866]
+Choice 0 [0 max 13] [RI: 867]
+New point placement New York = 0
+PLACES MOVE ENERGY 0.5000000000000056
+Choice Philadelphia [0 max 1] [RI: 868]
+Choice 7 [7 max 13] [RI: 869]
+New point placement Philadelphia = 7
+PLACES MOVE ENERGY 0.6000000000000055
+Choice New York [1 max 1] [RI: 871]
+Choice 4 [4 max 13] [RI: 872]
+New point placement New York = 4
+PLACES MOVE ENERGY 0.8000000000000056
+Choice Philadelphia [0 max 1] [RI: 874]
+Choice 7 [7 max 13] [RI: 875]
+New point placement Philadelphia = 7
+PLACES MOVE ENERGY 0.8000000000000056
+Choice New York [1 max 1] [RI: 876]
+Choice 8 [8 max 13] [RI: 877]
+New point placement New York = 8
+PLACES MOVE ENERGY 11.100000000000005
+Choice New York [1 max 1] [RI: 879]
+Choice 8 [8 max 13] [RI: 880]
+New point placement New York = 8
+PLACES MOVE ENERGY 11.100000000000005
+Choice New York [1 max 1] [RI: 882]
+Choice 13 [13 max 13] [RI: 883]
+New point placement New York = 13
+PLACES MOVE ENERGY 10.750000000000005
+Choice New York [1 max 1] [RI: 885]
+Choice 9 [9 max 13] [RI: 886]
+New point placement New York = 9
+PLACES MOVE ENERGY 11.070000000000006
+Choice New York [1 max 1] [RI: 888]
+Choice 9 [9 max 13] [RI: 889]
+New point placement New York = 9
+PLACES MOVE ENERGY 11.070000000000006
+       2.3       0.8        50        15      0050
+Choice Philadelphia [0 max 1] [RI: 891]
+Choice 1 [1 max 13] [RI: 892]
+New point placement Philadelphia = 1
+PLACES MOVE ENERGY 10.270000000000007
+Choice New York [1 max 1] [RI: 894]
+Choice 7 [7 max 13] [RI: 895]
+New point placement New York = 7
+PLACES MOVE ENERGY 11.200000000000005
+Choice New York [1 max 1] [RI: 897]
+Choice 9 [9 max 13] [RI: 898]
+New point placement New York = 9
+PLACES MOVE ENERGY 11.070000000000006
+Choice New York [1 max 1] [RI: 900]
+Choice 7 [7 max 13] [RI: 0]
+New point placement New York = 7
+PLACES MOVE ENERGY 11.200000000000005
+Choice Philadelphia [0 max 1] [RI: 2]
+Choice 12 [12 max 13] [RI: 3]
+New point placement Philadelphia = 12
+PLACES MOVE ENERGY 1.0000000000000058
+Choice New York [1 max 1] [RI: 5]
+Choice 10 [10 max 13] [RI: 6]
+New point placement New York = 10
+PLACES MOVE ENERGY 11.200000000000006
+Choice Philadelphia [0 max 1] [RI: 8]
+Choice 10 [10 max 13] [RI: 9]
+New point placement Philadelphia = 10
+PLACES MOVE ENERGY 0.6000000000000058
+Choice New York [1 max 1] [RI: 10]
+Choice 3 [3 max 13] [RI: 11]
+New point placement New York = 3
+PLACES MOVE ENERGY 0.5750000000000057
+Choice Philadelphia [0 max 1] [RI: 12]
+Choice 10 [10 max 13] [RI: 13]
+New point placement Philadelphia = 10
+PLACES MOVE ENERGY 0.5750000000000057
+Choice Philadelphia [0 max 1] [RI: 14]
+Choice 7 [7 max 13] [RI: 15]
+New point placement Philadelphia = 7
+PLACES MOVE ENERGY 0.7750000000000057
+Choice New York [1 max 1] [RI: 17]
+Choice 1 [1 max 13] [RI: 18]
+New point placement New York = 1
+PLACES MOVE ENERGY 0.6700000000000057
+Choice New York [1 max 1] [RI: 19]
+Choice 12 [12 max 13] [RI: 20]
+New point placement New York = 12
+PLACES MOVE ENERGY 11.400000000000006
+Choice Philadelphia [0 max 1] [RI: 22]
+Choice 8 [8 max 13] [RI: 23]
+New point placement Philadelphia = 8
+PLACES MOVE ENERGY 0.5700000000000057
+Choice Philadelphia [0 max 1] [RI: 24]
+Choice 4 [4 max 13] [RI: 25]
+New point placement Philadelphia = 4
+PLACES MOVE ENERGY 10.270000000000005
+Choice Philadelphia [0 max 1] [RI: 27]
+Choice 8 [8 max 13] [RI: 28]
+New point placement Philadelphia = 8
+PLACES MOVE ENERGY 0.5700000000000057
+Choice New York [1 max 1] [RI: 29]
+Choice 2 [2 max 13] [RI: 30]
+New point placement New York = 2
+PLACES MOVE ENERGY 0.6000000000000058
+Choice Philadelphia [0 max 1] [RI: 32]
+Choice 2 [2 max 13] [RI: 33]
+New point placement Philadelphia = 2
+PLACES MOVE ENERGY 10.200000000000005
+Choice New York [1 max 1] [RI: 35]
+Choice 7 [7 max 13] [RI: 36]
+New point placement New York = 7
+PLACES MOVE ENERGY 11.100000000000005
+Choice Philadelphia [0 max 1] [RI: 38]
+Choice 11 [11 max 13] [RI: 39]
+New point placement Philadelphia = 11
+PLACES MOVE ENERGY 0.6750000000000057
+Choice Philadelphia [0 max 1] [RI: 41]
+Choice 3 [3 max 13] [RI: 42]
+New point placement Philadelphia = 3
+PLACES MOVE ENERGY 10.275000000000006
+       1.5     0.675        50        20      0050
+Choice Philadelphia [0 max 1] [RI: 44]
+Choice 11 [11 max 13] [RI: 45]
+New point placement Philadelphia = 11
+PLACES MOVE ENERGY 0.6750000000000057
+Choice Philadelphia [0 max 1] [RI: 46]
+Choice 0 [0 max 13] [RI: 47]
+New point placement Philadelphia = 0
+PLACES MOVE ENERGY 10.100000000000005
+Choice New York [1 max 1] [RI: 49]
+Choice 4 [4 max 13] [RI: 50]
+New point placement New York = 4
+PLACES MOVE ENERGY 0.7750000000000057
+Choice New York [1 max 1] [RI: 52]
+Choice 2 [2 max 13] [RI: 53]
+New point placement New York = 2
+PLACES MOVE ENERGY 0.6750000000000057
+Choice New York [1 max 1] [RI: 54]
+Choice 8 [8 max 13] [RI: 55]
+New point placement New York = 8
+PLACES MOVE ENERGY 11.075000000000006
+Choice New York [1 max 1] [RI: 57]
+Choice 0 [0 max 13] [RI: 58]
+New point placement New York = 0
+PLACES MOVE ENERGY 0.5750000000000057
+Choice Philadelphia [0 max 1] [RI: 59]
+Choice 4 [4 max 13] [RI: 60]
+New point placement Philadelphia = 4
+PLACES MOVE ENERGY 10.200000000000005
+Choice Philadelphia [0 max 1] [RI: 62]
+Choice 2 [2 max 13] [RI: 63]
+New point placement Philadelphia = 2
+PLACES MOVE ENERGY 10.100000000000005
+Choice New York [1 max 1] [RI: 65]
+Choice 5 [5 max 13] [RI: 66]
+New point placement New York = 5
+PLACES MOVE ENERGY 1.4750000000000059
+Choice New York [1 max 1] [RI: 68]
+Choice 8 [8 max 13] [RI: 69]
+New point placement New York = 8
+PLACES MOVE ENERGY 11.075000000000006
+Choice New York [1 max 1] [RI: 71]
+Choice 1 [1 max 13] [RI: 72]
+New point placement New York = 1
+PLACES MOVE ENERGY 0.6450000000000058
+Choice Philadelphia [0 max 1] [RI: 73]
+Choice 6 [6 max 13] [RI: 74]
+New point placement Philadelphia = 6
+PLACES MOVE ENERGY 11.070000000000006
+Choice Philadelphia [0 max 1] [RI: 76]
+Choice 1 [1 max 13] [RI: 77]
+New point placement Philadelphia = 1
+PLACES MOVE ENERGY 10.140000000000006
+Choice Philadelphia [0 max 1] [RI: 79]
+Choice 9 [9 max 13] [RI: 80]
+New point placement Philadelphia = 9
+PLACES MOVE ENERGY 0.5400000000000058
+Choice New York [1 max 1] [RI: 81]
+Choice 5 [5 max 13] [RI: 82]
+New point placement New York = 5
+PLACES MOVE ENERGY 1.3700000000000059
+Choice New York [1 max 1] [RI: 84]
+Choice 13 [13 max 13] [RI: 85]
+New point placement New York = 13
+PLACES MOVE ENERGY 10.620000000000006
+Choice New York [1 max 1] [RI: 87]
+Choice 1 [1 max 13] [RI: 88]
+New point placement New York = 1
+PLACES MOVE ENERGY 0.5400000000000058
+Choice New York [1 max 1] [RI: 89]
+Choice 13 [13 max 13] [RI: 90]
+New point placement New York = 13
+PLACES MOVE ENERGY 10.620000000000006
+Choice New York [1 max 1] [RI: 92]
+Choice 6 [6 max 13] [RI: 93]
+New point placement New York = 6
+PLACES MOVE ENERGY 11.470000000000006
+Choice New York [1 max 1] [RI: 95]
+Choice 1 [1 max 13] [RI: 96]
+New point placement New York = 1
+PLACES MOVE ENERGY 0.5400000000000058
+         1      0.54        45        20      0050
+Choice Philadelphia [0 max 1] [RI: 97]
+Choice 11 [11 max 13] [RI: 98]
+New point placement Philadelphia = 11
+PLACES MOVE ENERGY 0.6450000000000058
+Choice Philadelphia [0 max 1] [RI: 100]
+Choice 13 [13 max 13] [RI: 101]
+New point placement Philadelphia = 13
+PLACES MOVE ENERGY 10.220000000000006
+Choice Philadelphia [0 max 1] [RI: 103]
+Choice 12 [12 max 13] [RI: 104]
+New point placement Philadelphia = 12
+PLACES MOVE ENERGY 0.8700000000000059
+Choice New York [1 max 1] [RI: 106]
+Choice 13 [13 max 13] [RI: 107]
+New point placement New York = 13
+PLACES MOVE ENERGY 10.950000000000006
+Choice New York [1 max 1] [RI: 109]
+Choice 12 [12 max 13] [RI: 110]
+New point placement New York = 12
+PLACES MOVE ENERGY 11.600000000000007
+Choice New York [1 max 1] [RI: 112]
+Choice 10 [10 max 13] [RI: 113]
+New point placement New York = 10
+PLACES MOVE ENERGY 11.200000000000006
+Choice Philadelphia [0 max 1] [RI: 115]
+Choice 11 [11 max 13] [RI: 116]
+New point placement Philadelphia = 11
+PLACES MOVE ENERGY 0.6450000000000058
+Choice New York [1 max 1] [RI: 117]
+Choice 1 [1 max 13] [RI: 118]
+New point placement New York = 1
+PLACES MOVE ENERGY 0.6450000000000058
+Choice New York [1 max 1] [RI: 119]
+Choice 11 [11 max 13] [RI: 120]
+New point placement New York = 11
+PLACES MOVE ENERGY 11.150000000000006
+Choice New York [1 max 1] [RI: 122]
+Choice 2 [2 max 13] [RI: 123]
+New point placement New York = 2
+PLACES MOVE ENERGY 0.6750000000000057
+Choice New York [1 max 1] [RI: 125]
+Choice 5 [5 max 13] [RI: 126]
+New point placement New York = 5
+PLACES MOVE ENERGY 1.4750000000000059
+Choice Philadelphia [0 max 1] [RI: 128]
+Choice 1 [1 max 13] [RI: 129]
+New point placement Philadelphia = 1
+PLACES MOVE ENERGY 10.970000000000006
+Choice New York [1 max 1] [RI: 131]
+Choice 3 [3 max 13] [RI: 132]
+New point placement New York = 3
+PLACES MOVE ENERGY 0.7500000000000058
+Choice Philadelphia [0 max 1] [RI: 133]
+Choice 10 [10 max 13] [RI: 134]
+New point placement Philadelphia = 10
+PLACES MOVE ENERGY 0.5750000000000058
+Choice Philadelphia [0 max 1] [RI: 135]
+Choice 12 [12 max 13] [RI: 136]
+New point placement Philadelphia = 12
+PLACES MOVE ENERGY 0.9750000000000059
+Choice New York [1 max 1] [RI: 138]
+Choice 1 [1 max 13] [RI: 139]
+New point placement New York = 1
+PLACES MOVE ENERGY 0.8700000000000059
+Choice Philadelphia [0 max 1] [RI: 140]
+Choice 0 [0 max 13] [RI: 141]
+New point placement Philadelphia = 0
+PLACES MOVE ENERGY 10.070000000000006
+Choice Philadelphia [0 max 1] [RI: 143]
+Choice 4 [4 max 13] [RI: 144]
+New point placement Philadelphia = 4
+PLACES MOVE ENERGY 10.270000000000005
+Choice Philadelphia [0 max 1] [RI: 146]
+Choice 10 [10 max 13] [RI: 147]
+New point placement Philadelphia = 10
+PLACES MOVE ENERGY 0.47000000000000586
+Choice New York [1 max 1] [RI: 148]
+Choice 0 [0 max 13] [RI: 149]
+New point placement New York = 0
+PLACES MOVE ENERGY 0.40000000000000585
+      0.67       0.4        60        30      0050
+Choice New York [1 max 1] [RI: 150]
+Choice 11 [11 max 13] [RI: 151]
+New point placement New York = 11
+PLACES MOVE ENERGY 10.975000000000005
+Choice New York [1 max 1] [RI: 153]
+Choice 9 [9 max 13] [RI: 154]
+New point placement New York = 9
+PLACES MOVE ENERGY 10.870000000000006
+Choice Philadelphia [0 max 1] [RI: 156]
+Choice 13 [13 max 13] [RI: 157]
+New point placement Philadelphia = 13
+PLACES MOVE ENERGY 10.150000000000006
+Choice New York [1 max 1] [RI: 159]
+Choice 3 [3 max 13] [RI: 160]
+New point placement New York = 3
+PLACES MOVE ENERGY 0.5750000000000058
+Choice New York [1 max 1] [RI: 162]
+Choice 3 [3 max 13] [RI: 163]
+New point placement New York = 3
+PLACES MOVE ENERGY 0.5750000000000058
+Choice New York [1 max 1] [RI: 164]
+Choice 13 [13 max 13] [RI: 165]
+New point placement New York = 13
+PLACES MOVE ENERGY 10.550000000000006
+Choice New York [1 max 1] [RI: 167]
+Choice 0 [0 max 13] [RI: 168]
+New point placement New York = 0
+PLACES MOVE ENERGY 0.40000000000000585
+Choice New York [1 max 1] [RI: 169]
+Choice 9 [9 max 13] [RI: 170]
+New point placement New York = 9
+PLACES MOVE ENERGY 10.870000000000006
+Choice Philadelphia [0 max 1] [RI: 172]
+Choice 0 [0 max 13] [RI: 173]
+New point placement Philadelphia = 0
+PLACES MOVE ENERGY 10.000000000000005
+Choice Philadelphia [0 max 1] [RI: 175]
+Choice 6 [6 max 13] [RI: 176]
+New point placement Philadelphia = 6
+PLACES MOVE ENERGY 11.000000000000005
+Choice Philadelphia [0 max 1] [RI: 178]
+Choice 2 [2 max 13] [RI: 179]
+New point placement Philadelphia = 2
+PLACES MOVE ENERGY 10.100000000000005
+Choice New York [1 max 1] [RI: 181]
+Choice 11 [11 max 13] [RI: 182]
+New point placement New York = 11
+PLACES MOVE ENERGY 10.975000000000005
+Choice New York [1 max 1] [RI: 184]
+Choice 11 [11 max 13] [RI: 185]
+New point placement New York = 11
+PLACES MOVE ENERGY 10.975000000000005
+Choice New York [1 max 1] [RI: 187]
+Choice 2 [2 max 13] [RI: 188]
+New point placement New York = 2
+PLACES MOVE ENERGY 0.5000000000000059
+Choice New York [1 max 1] [RI: 190]
+Choice 5 [5 max 13] [RI: 191]
+New point placement New York = 5
+PLACES MOVE ENERGY 1.300000000000006
+Choice Philadelphia [0 max 1] [RI: 193]
+Choice 8 [8 max 13] [RI: 194]
+New point placement Philadelphia = 8
+PLACES MOVE ENERGY 0.6000000000000059
+Choice New York [1 max 1] [RI: 196]
+Choice 10 [10 max 13] [RI: 197]
+New point placement New York = 10
+PLACES MOVE ENERGY 10.800000000000006
+Choice New York [1 max 1] [RI: 199]
+Choice 10 [10 max 13] [RI: 200]
+New point placement New York = 10
+PLACES MOVE ENERGY 10.800000000000006
+Choice Philadelphia [0 max 1] [RI: 202]
+Choice 2 [2 max 13] [RI: 203]
+New point placement Philadelphia = 2
+PLACES MOVE ENERGY 10.200000000000005
+Choice New York [1 max 1] [RI: 205]
+Choice 1 [1 max 13] [RI: 206]
+New point placement New York = 1
+PLACES MOVE ENERGY 0.4700000000000059
+      0.45      0.47        25        10      0050
+Choice Philadelphia [0 max 1] [RI: 207]
+Choice 4 [4 max 13] [RI: 208]
+New point placement Philadelphia = 4
+PLACES MOVE ENERGY 10.270000000000005
+Choice New York [1 max 1] [RI: 210]
+Choice 1 [1 max 13] [RI: 211]
+New point placement New York = 1
+PLACES MOVE ENERGY 0.4700000000000059
+Choice Philadelphia [0 max 1] [RI: 212]
+Choice 12 [12 max 13] [RI: 213]
+New point placement Philadelphia = 12
+PLACES MOVE ENERGY 0.8700000000000059
+Choice New York [1 max 1] [RI: 215]
+Choice 1 [1 max 13] [RI: 216]
+New point placement New York = 1
+PLACES MOVE ENERGY 0.8700000000000059
+Choice Philadelphia [0 max 1] [RI: 217]
+Choice 5 [5 max 13] [RI: 218]
+New point placement Philadelphia = 5
+PLACES MOVE ENERGY 10.970000000000006
+Choice Philadelphia [0 max 1] [RI: 220]
+Choice 9 [9 max 13] [RI: 221]
+New point placement Philadelphia = 9
+PLACES MOVE ENERGY 0.5400000000000058
+Choice Philadelphia [0 max 1] [RI: 222]
+Choice 7 [7 max 13] [RI: 223]
+New point placement Philadelphia = 7
+PLACES MOVE ENERGY 0.6700000000000058
+Choice New York [1 max 1] [RI: 225]
+Choice 6 [6 max 13] [RI: 226]
+New point placement New York = 6
+PLACES MOVE ENERGY 11.470000000000006
+Choice Philadelphia [0 max 1] [RI: 228]
+Choice 13 [13 max 13] [RI: 229]
+New point placement Philadelphia = 13
+PLACES MOVE ENERGY 10.220000000000006
+Choice New York [1 max 1] [RI: 231]
+Choice 1 [1 max 13] [RI: 232]
+New point placement New York = 1
+PLACES MOVE ENERGY 0.5400000000000058
+Choice New York [1 max 1] [RI: 233]
+Choice 2 [2 max 13] [RI: 234]
+New point placement New York = 2
+PLACES MOVE ENERGY 0.5700000000000058
+Choice New York [1 max 1] [RI: 236]
+Choice 8 [8 max 13] [RI: 237]
+New point placement New York = 8
+PLACES MOVE ENERGY 10.970000000000006
+Choice New York [1 max 1] [RI: 239]
+Choice 11 [11 max 13] [RI: 240]
+New point placement New York = 11
+PLACES MOVE ENERGY 11.045000000000005
+Choice Philadelphia [0 max 1] [RI: 242]
+Choice 10 [10 max 13] [RI: 243]
+New point placement Philadelphia = 10
+PLACES MOVE ENERGY 0.5000000000000059
+Choice Philadelphia [0 max 1] [RI: 244]
+Choice 0 [0 max 13] [RI: 245]
+New point placement Philadelphia = 0
+PLACES MOVE ENERGY 10.100000000000005
+Choice Philadelphia [0 max 1] [RI: 247]
+Choice 7 [7 max 13] [RI: 248]
+New point placement Philadelphia = 7
+PLACES MOVE ENERGY 0.7000000000000058
+Choice Philadelphia [0 max 1] [RI: 250]
+Choice 6 [6 max 13] [RI: 251]
+New point placement Philadelphia = 6
+PLACES MOVE ENERGY 11.100000000000005
+Choice New York [1 max 1] [RI: 253]
+Choice 3 [3 max 13] [RI: 254]
+New point placement New York = 3
+PLACES MOVE ENERGY 0.7750000000000059
+Choice Philadelphia [0 max 1] [RI: 256]
+Choice 7 [7 max 13] [RI: 257]
+New point placement Philadelphia = 7
+PLACES MOVE ENERGY 0.7000000000000058
+Choice New York [1 max 1] [RI: 258]
+Choice 13 [13 max 13] [RI: 259]
+New point placement New York = 13
+PLACES MOVE ENERGY 10.750000000000005
+       0.3       0.7        45        10      0050
+Choice Philadelphia [0 max 1] [RI: 261]
+Choice 1 [1 max 13] [RI: 262]
+New point placement Philadelphia = 1
+PLACES MOVE ENERGY 10.170000000000005
+Choice Philadelphia [0 max 1] [RI: 264]
+Choice 2 [2 max 13] [RI: 265]
+New point placement Philadelphia = 2
+PLACES MOVE ENERGY 10.200000000000005
+Choice New York [1 max 1] [RI: 267]
+Choice 5 [5 max 13] [RI: 268]
+New point placement New York = 5
+PLACES MOVE ENERGY 11.500000000000005
+Choice Philadelphia [0 max 1] [RI: 270]
+Choice 8 [8 max 13] [RI: 271]
+New point placement Philadelphia = 8
+PLACES MOVE ENERGY 0.6000000000000059
+Choice Philadelphia [0 max 1] [RI: 272]
+Choice 11 [11 max 13] [RI: 273]
+New point placement Philadelphia = 11
+PLACES MOVE ENERGY 0.6750000000000058
+Choice Philadelphia [0 max 1] [RI: 275]
+Choice 6 [6 max 13] [RI: 276]
+New point placement Philadelphia = 6
+PLACES MOVE ENERGY 11.100000000000005
+Choice Philadelphia [0 max 1] [RI: 278]
+Choice 7 [7 max 13] [RI: 279]
+New point placement Philadelphia = 7
+PLACES MOVE ENERGY 0.7000000000000058
+Choice New York [1 max 1] [RI: 281]
+Choice 10 [10 max 13] [RI: 282]
+New point placement New York = 10
+PLACES MOVE ENERGY 11.000000000000005
+Choice New York [1 max 1] [RI: 284]
+Choice 7 [7 max 13] [RI: 285]
+New point placement New York = 7
+PLACES MOVE ENERGY 11.200000000000005
+Choice New York [1 max 1] [RI: 287]
+Choice 13 [13 max 13] [RI: 288]
+New point placement New York = 13
+PLACES MOVE ENERGY 10.750000000000005
+Choice New York [1 max 1] [RI: 290]
+Choice 4 [4 max 13] [RI: 291]
+New point placement New York = 4
+PLACES MOVE ENERGY 0.8000000000000058
+Choice Philadelphia [0 max 1] [RI: 293]
+Choice 5 [5 max 13] [RI: 294]
+New point placement Philadelphia = 5
+PLACES MOVE ENERGY 11.100000000000007
+Choice Philadelphia [0 max 1] [RI: 296]
+Choice 5 [5 max 13] [RI: 297]
+New point placement Philadelphia = 5
+PLACES MOVE ENERGY 11.100000000000007
+Choice Philadelphia [0 max 1] [RI: 299]
+Choice 13 [13 max 13] [RI: 300]
+New point placement Philadelphia = 13
+PLACES MOVE ENERGY 10.350000000000007
+Choice Philadelphia [0 max 1] [RI: 302]
+Choice 7 [7 max 13] [RI: 303]
+New point placement Philadelphia = 7
+PLACES MOVE ENERGY 0.8000000000000058
+Choice New York [1 max 1] [RI: 304]
+Choice 1 [1 max 13] [RI: 305]
+New point placement New York = 1
+PLACES MOVE ENERGY 0.6700000000000059
+Choice New York [1 max 1] [RI: 306]
+Choice 1 [1 max 13] [RI: 307]
+New point placement New York = 1
+PLACES MOVE ENERGY 0.6700000000000059
+Choice Philadelphia [0 max 1] [RI: 308]
+Choice 10 [10 max 13] [RI: 309]
+New point placement Philadelphia = 10
+PLACES MOVE ENERGY 0.47000000000000597
+Choice Philadelphia [0 max 1] [RI: 310]
+Choice 4 [4 max 13] [RI: 311]
+New point placement Philadelphia = 4
+PLACES MOVE ENERGY 10.270000000000005
+Choice New York [1 max 1] [RI: 313]
+Choice 6 [6 max 13] [RI: 314]
+New point placement New York = 6
+PLACES MOVE ENERGY 11.400000000000006
+       0.2      0.47        40        15      0050
+Choice New York [1 max 1] [RI: 316]
+Choice 12 [12 max 13] [RI: 317]
+New point placement New York = 12
+PLACES MOVE ENERGY 11.200000000000006
+Choice New York [1 max 1] [RI: 319]
+Choice 10 [10 max 13] [RI: 320]
+New point placement New York = 10
+PLACES MOVE ENERGY 10.800000000000006
+Choice Philadelphia [0 max 1] [RI: 322]
+Choice 4 [4 max 13] [RI: 323]
+New point placement Philadelphia = 4
+PLACES MOVE ENERGY 10.270000000000005
+Choice New York [1 max 1] [RI: 325]
+Choice 10 [10 max 13] [RI: 326]
+New point placement New York = 10
+PLACES MOVE ENERGY 10.800000000000006
+Choice Philadelphia [0 max 1] [RI: 328]
+Choice 1 [1 max 13] [RI: 329]
+New point placement Philadelphia = 1
+PLACES MOVE ENERGY 10.140000000000006
+Choice Philadelphia [0 max 1] [RI: 331]
+Choice 1 [1 max 13] [RI: 332]
+New point placement Philadelphia = 1
+PLACES MOVE ENERGY 10.140000000000006
+Choice Philadelphia [0 max 1] [RI: 334]
+Choice 9 [9 max 13] [RI: 335]
+New point placement Philadelphia = 9
+PLACES MOVE ENERGY 0.5400000000000059
+Choice New York [1 max 1] [RI: 337]
+Choice 5 [5 max 13] [RI: 338]
+New point placement New York = 5
+PLACES MOVE ENERGY 1.3700000000000059
+Choice New York [1 max 1] [RI: 340]
+Choice 8 [8 max 13] [RI: 341]
+New point placement New York = 8
+PLACES MOVE ENERGY 10.970000000000006
+Choice New York [1 max 1] [RI: 343]
+Choice 10 [10 max 13] [RI: 344]
+New point placement New York = 10
+PLACES MOVE ENERGY 10.870000000000006
+Choice Philadelphia [0 max 1] [RI: 346]
+Choice 6 [6 max 13] [RI: 347]
+New point placement Philadelphia = 6
+PLACES MOVE ENERGY 11.070000000000006
+Choice Philadelphia [0 max 1] [RI: 349]
+Choice 2 [2 max 13] [RI: 350]
+New point placement Philadelphia = 2
+PLACES MOVE ENERGY 10.170000000000005
+Choice New York [1 max 1] [RI: 352]
+Choice 11 [11 max 13] [RI: 353]
+New point placement New York = 11
+PLACES MOVE ENERGY 11.045000000000005
+Choice New York [1 max 1] [RI: 355]
+Choice 0 [0 max 13] [RI: 356]
+New point placement New York = 0
+PLACES MOVE ENERGY 0.4700000000000059
+Choice Philadelphia [0 max 1] [RI: 357]
+Choice 6 [6 max 13] [RI: 358]
+New point placement Philadelphia = 6
+PLACES MOVE ENERGY 11.000000000000005
+Choice New York [1 max 1] [RI: 360]
+Choice 11 [11 max 13] [RI: 361]
+New point placement New York = 11
+PLACES MOVE ENERGY 11.045000000000005
+Choice New York [1 max 1] [RI: 363]
+Choice 9 [9 max 13] [RI: 364]
+New point placement New York = 9
+PLACES MOVE ENERGY 10.940000000000007
+Choice Philadelphia [0 max 1] [RI: 366]
+Choice 6 [6 max 13] [RI: 367]
+New point placement Philadelphia = 6
+PLACES MOVE ENERGY 11.000000000000005
+Choice New York [1 max 1] [RI: 369]
+Choice 3 [3 max 13] [RI: 370]
+New point placement New York = 3
+PLACES MOVE ENERGY 0.6450000000000059
+Choice New York [1 max 1] [RI: 372]
+Choice 5 [5 max 13] [RI: 373]
+New point placement New York = 5
+PLACES MOVE ENERGY 1.3700000000000059
+      0.13     0.645        15         5      0050
+Choice Philadelphia [0 max 1] [RI: 375]
+Choice 1 [1 max 13] [RI: 376]
+New point placement Philadelphia = 1
+PLACES MOVE ENERGY 10.245000000000006
+Choice Philadelphia [0 max 1] [RI: 378]
+Choice 2 [2 max 13] [RI: 379]
+New point placement Philadelphia = 2
+PLACES MOVE ENERGY 10.275000000000006
+Choice Philadelphia [0 max 1] [RI: 381]
+Choice 6 [6 max 13] [RI: 382]
+New point placement Philadelphia = 6
+PLACES MOVE ENERGY 11.175000000000006
+Choice New York [1 max 1] [RI: 384]
+Choice 12 [12 max 13] [RI: 385]
+New point placement New York = 12
+PLACES MOVE ENERGY 11.270000000000007
+Choice New York [1 max 1] [RI: 387]
+Choice 1 [1 max 13] [RI: 388]
+New point placement New York = 1
+PLACES MOVE ENERGY 0.5400000000000059
+Choice Philadelphia [0 max 1] [RI: 389]
+Choice 13 [13 max 13] [RI: 390]
+New point placement Philadelphia = 13
+PLACES MOVE ENERGY 10.220000000000006
+Choice Philadelphia [0 max 1] [RI: 392]
+Choice 11 [11 max 13] [RI: 393]
+New point placement Philadelphia = 11
+PLACES MOVE ENERGY 0.6450000000000059
+Choice Philadelphia [0 max 1] [RI: 395]
+Choice 5 [5 max 13] [RI: 396]
+New point placement Philadelphia = 5
+PLACES MOVE ENERGY 10.970000000000006
+Choice New York [1 max 1] [RI: 398]
+Choice 2 [2 max 13] [RI: 399]
+New point placement New York = 2
+PLACES MOVE ENERGY 0.570000000000006
+Choice Philadelphia [0 max 1] [RI: 401]
+Choice 9 [9 max 13] [RI: 402]
+New point placement Philadelphia = 9
+PLACES MOVE ENERGY 0.570000000000006
+Choice Philadelphia [0 max 1] [RI: 403]
+Choice 7 [7 max 13] [RI: 404]
+New point placement Philadelphia = 7
+PLACES MOVE ENERGY 0.700000000000006
+Choice Philadelphia [0 max 1] [RI: 406]
+Choice 8 [8 max 13] [RI: 407]
+New point placement Philadelphia = 8
+PLACES MOVE ENERGY 0.600000000000006
+Choice New York [1 max 1] [RI: 409]
+Choice 6 [6 max 13] [RI: 410]
+New point placement New York = 6
+PLACES MOVE ENERGY 11.500000000000005
+Choice New York [1 max 1] [RI: 412]
+Choice 3 [3 max 13] [RI: 413]
+New point placement New York = 3
+PLACES MOVE ENERGY 0.675000000000006
+Choice Philadelphia [0 max 1] [RI: 415]
+Choice 11 [11 max 13] [RI: 416]
+New point placement Philadelphia = 11
+PLACES MOVE ENERGY 0.6750000000000059
+Choice New York [1 max 1] [RI: 418]
+Choice 11 [11 max 13] [RI: 419]
+New point placement New York = 11
+PLACES MOVE ENERGY 11.075000000000005
+Choice New York [1 max 1] [RI: 421]
+Choice 9 [9 max 13] [RI: 422]
+New point placement New York = 9
+PLACES MOVE ENERGY 10.970000000000006
+Choice New York [1 max 1] [RI: 424]
+Choice 10 [10 max 13] [RI: 425]
+New point placement New York = 10
+PLACES MOVE ENERGY 10.900000000000006
+Choice Philadelphia [0 max 1] [RI: 427]
+Choice 11 [11 max 13] [RI: 428]
+New point placement Philadelphia = 11
+PLACES MOVE ENERGY 0.6750000000000059
+Choice Philadelphia [0 max 1] [RI: 430]
+Choice 8 [8 max 13] [RI: 431]
+New point placement Philadelphia = 8
+PLACES MOVE ENERGY 0.600000000000006
+     0.087       0.6        30        10      0050
+Choice New York [1 max 1] [RI: 432]
+Choice 5 [5 max 13] [RI: 433]
+New point placement New York = 5
+PLACES MOVE ENERGY 1.4000000000000061
+Choice Philadelphia [0 max 1] [RI: 435]
+Choice 6 [6 max 13] [RI: 436]
+New point placement Philadelphia = 6
+PLACES MOVE ENERGY 11.100000000000007
+Choice Philadelphia [0 max 1] [RI: 438]
+Choice 5 [5 max 13] [RI: 439]
+New point placement Philadelphia = 5
+PLACES MOVE ENERGY 11.000000000000007
+Choice Philadelphia [0 max 1] [RI: 441]
+Choice 5 [5 max 13] [RI: 442]
+New point placement Philadelphia = 5
+PLACES MOVE ENERGY 11.000000000000007
+Choice Philadelphia [0 max 1] [RI: 444]
+Choice 0 [0 max 13] [RI: 445]
+New point placement Philadelphia = 0
+PLACES MOVE ENERGY 10.100000000000007
+Choice New York [1 max 1] [RI: 447]
+Choice 5 [5 max 13] [RI: 448]
+New point placement New York = 5
+PLACES MOVE ENERGY 1.4000000000000061
+Choice New York [1 max 1] [RI: 450]
+Choice 10 [10 max 13] [RI: 451]
+New point placement New York = 10
+PLACES MOVE ENERGY 10.900000000000006
+Choice New York [1 max 1] [RI: 453]
+Choice 13 [13 max 13] [RI: 454]
+New point placement New York = 13
+PLACES MOVE ENERGY 10.650000000000006
+Choice New York [1 max 1] [RI: 456]
+Choice 12 [12 max 13] [RI: 457]
+New point placement New York = 12
+PLACES MOVE ENERGY 11.300000000000006
+Choice Philadelphia [0 max 1] [RI: 459]
+Choice 4 [4 max 13] [RI: 460]
+New point placement Philadelphia = 4
+PLACES MOVE ENERGY 10.300000000000006
+Choice New York [1 max 1] [RI: 462]
+Choice 3 [3 max 13] [RI: 463]
+New point placement New York = 3
+PLACES MOVE ENERGY 0.675000000000006
+Choice Philadelphia [0 max 1] [RI: 465]
+Choice 13 [13 max 13] [RI: 466]
+New point placement Philadelphia = 13
+PLACES MOVE ENERGY 10.250000000000007
+Choice Philadelphia [0 max 1] [RI: 468]
+Choice 3 [3 max 13] [RI: 469]
+New point placement Philadelphia = 3
+PLACES MOVE ENERGY 10.275000000000007
+Choice Philadelphia [0 max 1] [RI: 471]
+Choice 13 [13 max 13] [RI: 472]
+New point placement Philadelphia = 13
+PLACES MOVE ENERGY 10.250000000000007
+Choice New York [1 max 1] [RI: 474]
+Choice 2 [2 max 13] [RI: 475]
+New point placement New York = 2
+PLACES MOVE ENERGY 0.600000000000006
+Choice Philadelphia [0 max 1] [RI: 476]
+Choice 5 [5 max 13] [RI: 477]
+New point placement Philadelphia = 5
+PLACES MOVE ENERGY 11.000000000000007
+Choice Philadelphia [0 max 1] [RI: 479]
+Choice 0 [0 max 13] [RI: 480]
+New point placement Philadelphia = 0
+PLACES MOVE ENERGY 10.100000000000007
+Choice Philadelphia [0 max 1] [RI: 482]
+Choice 1 [1 max 13] [RI: 483]
+New point placement Philadelphia = 1
+PLACES MOVE ENERGY 10.170000000000007
+Choice New York [1 max 1] [RI: 485]
+Choice 13 [13 max 13] [RI: 486]
+New point placement New York = 13
+PLACES MOVE ENERGY 10.650000000000006
+Choice New York [1 max 1] [RI: 488]
+Choice 4 [4 max 13] [RI: 489]
+New point placement New York = 4
+PLACES MOVE ENERGY 0.700000000000006
+     0.058       0.6         5         0      0050
+Annealing from 41 to 0.058 over 15 steps.
+Temperature    Energy    Accept   Improve   Elapsed Remaining
+        41       0.6      0050
+Choice Philadelphia [0 max 1] [RI: 491]
+Choice 3 [3 max 13] [RI: 492]
+New point placement Philadelphia = 3
+PLACES MOVE ENERGY 10.275000000000007
+    26.474    10.275       100         0      0050     01141
+Choice Philadelphia [0 max 1] [RI: 494]
+Choice 6 [6 max 13] [RI: 495]
+New point placement Philadelphia = 6
+PLACES MOVE ENERGY 11.100000000000007
+    17.095    10.275         0         0      0050      0526
+Choice Philadelphia [0 max 1] [RI: 497]
+Choice 0 [0 max 13] [RI: 498]
+New point placement Philadelphia = 0
+PLACES MOVE ENERGY 10.100000000000007
+    11.039      10.1       100       100      0050      0320
+Choice New York [1 max 1] [RI: 499]
+Choice 4 [4 max 13] [RI: 500]
+New point placement New York = 4
+PLACES MOVE ENERGY 10.200000000000006
+     7.128      10.2       100         0      0050      0218
+Choice New York [1 max 1] [RI: 502]
+Choice 11 [11 max 13] [RI: 503]
+New point placement New York = 11
+PLACES MOVE ENERGY 10.575000000000006
+     4.603    10.575       100         0      0050      0140
+Choice Philadelphia [0 max 1] [RI: 505]
+Choice 10 [10 max 13] [RI: 506]
+New point placement Philadelphia = 10
+PLACES MOVE ENERGY 10.975000000000007
+     2.972    10.975       100         0      0050      0115
+Choice Philadelphia [0 max 1] [RI: 508]
+Choice 6 [6 max 13] [RI: 509]
+New point placement Philadelphia = 6
+PLACES MOVE ENERGY 11.575000000000006
+     1.919    10.975         0         0      0050      0057
+Choice Philadelphia [0 max 1] [RI: 511]
+Choice 11 [11 max 13] [RI: 512]
+New point placement Philadelphia = 11
+PLACES MOVE ENERGY 11.150000000000006
+     1.239     11.15       100         0      0050      0044
+Choice Philadelphia [0 max 1] [RI: 514]
+Choice 9 [9 max 13] [RI: 515]
+New point placement Philadelphia = 9
+PLACES MOVE ENERGY 11.045000000000007
+       0.8    11.045       100       100      0050      0033
+Choice Philadelphia [0 max 1] [RI: 516]
+Choice 11 [11 max 13] [RI: 517]
+New point placement Philadelphia = 11
+PLACES MOVE ENERGY 11.150000000000006
+     0.517     11.15       100         0      0050      0025
+Choice Philadelphia [0 max 1] [RI: 519]
+Choice 7 [7 max 13] [RI: 520]
+New point placement Philadelphia = 7
+PLACES MOVE ENERGY 11.175000000000006
+     0.334    11.175       100         0      0050      0018
+Choice New York [1 max 1] [RI: 522]
+Choice 11 [11 max 13] [RI: 523]
+New point placement New York = 11
+PLACES MOVE ENERGY 11.175000000000006
+     0.215    11.175       100         0      0050      0013
+Choice Philadelphia [0 max 1] [RI: 524]
+Choice 5 [5 max 13] [RI: 525]
+New point placement Philadelphia = 5
+PLACES MOVE ENERGY 11.475000000000007
+     0.139    11.175         0         0      0050       008
+Choice Philadelphia [0 max 1] [RI: 527]
+Choice 3 [3 max 13] [RI: 528]
+New point placement Philadelphia = 3
+PLACES MOVE ENERGY 10.750000000000007
+      0.09     10.75       100       100      0050       004
+Choice Philadelphia [0 max 1] [RI: 529]
+Choice 10 [10 max 13] [RI: 530]
+New point placement Philadelphia = 10
+PLACES MOVE ENERGY 10.975000000000007
+     0.058    10.975       100         0      0050       000
