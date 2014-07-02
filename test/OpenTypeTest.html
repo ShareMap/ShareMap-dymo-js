@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <style>
+
+            @font-face
+            {
+                font-family: DejaVuSerif;
+                src: url(../fonts/DejaVuSerif.ttf);
+            }
+
+            .DejaVuSerif{
+                font-family: DejaVuSerif;
+
+            }
+        </style>
+        <script src="../lib/opentype-js/opentype.js"></script>
+        <script src="../src/TextMeasureOpenType.js"></script>
+
+        <script>
+            var tmot = new TextMeasureOpenType();
+
+            var DejaVuSerif = "../fonts/DejaVuSerif.ttf"
+
+            function fontsReady() {
+               var m = tmot.measureText("Philadelphia", 12, DejaVuSerif);
+               console.log(m);
+            }
+
+            function init() {
+                tmot.init([DejaVuSerif], fontsReady);
+            }
+        </script>
+    </head>
+    <body onload="init()">
+        <div class="DejaVuSerif">Philadelphia</div>
+    </body>
+</html>

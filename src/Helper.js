@@ -45,16 +45,16 @@ var objDeepCopy = function(obj, objDict) {
     }
     throw new Error("Unable to copy obj! Its type isn't supported.");
 }
-sharemapjs.objDeepCopy = objDeepCopy;
+sharemapdymo.objDeepCopy = objDeepCopy;
 
 var projectMercator = function(lam, phi, out) {
     out.x = lam;
     out.y = Math.log(Math.tan(Math.PI / 4.0 + 0.5 * phi));
 }
-sharemapjs.projectMercator = projectMercator;
+sharemapdymo.projectMercator = projectMercator;
 
 var projectPoint = function(lat, lng, z) {
-    Vector = sharemapjs.Vector;
+    Vector = sharemapdymo.Vector;
     var dimension = 256 * Math.pow(2, z);
     var DTR = Math.PI / 180.0;
     var res = {};
@@ -74,7 +74,7 @@ var projectPoint = function(lat, lng, z) {
     res.y -= 3000;
     return res;
 }
-sharemapjs.projectPoint = projectPoint;
+sharemapdymo.projectPoint = projectPoint;
 
 var objKeys = function(obj) {
     var res = [];
@@ -83,13 +83,13 @@ var objKeys = function(obj) {
     }
     return res;
 };
-sharemapjs.projectPoint = projectPoint;
+sharemapdymo.projectPoint = projectPoint;
 
 
 var radians = function(deg) {
     return deg * (Math.PI / 180);
 };
-sharemapjs.radians = radians;
+sharemapdymo.radians = radians;
 
 /* TODO: rename to routeMove */
 var routeMove = function(state) {
@@ -101,7 +101,7 @@ var routeMove = function(state) {
     state[a] = state[b];
     state[b] = stateSwap;
 };
-sharemapjs.route_move = routeMove;
+sharemapdymo.route_move = routeMove;
 
 
 var distance = function(a, b) {
@@ -113,27 +113,27 @@ var distance = function(a, b) {
     res = Math.acos(Math.sin(lat1) * Math.sin(lat2) + Math.cos(lat1) * Math.cos(lat2) * Math.cos(lon1 - lon2)) * R;
     return res;
 };
-sharemapjs.distance = distance;
+sharemapdymo.distance = distance;
 
 
 random = function(caller) {
     var randProvider;
-    if (sharemapjs.hasOwnProperty("randomProvider")) {
-        randomProvider = sharemapjs.randomProvider;
+    if (sharemapdymo.hasOwnProperty("randomProvider")) {
+        randomProvider = sharemapdymo.randomProvider;
     } else {
         randomProvider = Math.random;
     }
     var res = randomProvider();
     return res;
 };
-sharemapjs.random = random;
+sharemapdymo.random = random;
 
 randomInt = function(minimum, maximum, caller) {
     var r = random(caller);
     res = Math.floor(r * (maximum - minimum + 1)) + minimum;
     return res;
 };
-sharemapjs.randomInt = randomInt;
+sharemapdymo.randomInt = randomInt;
 
 var LEVEL2 = 2;
 var debugLevel = LEVEL2;
@@ -145,12 +145,12 @@ var debug = function(msg, level) {
     }
 }
 
-sharemapjs.debug = debug;
+sharemapdymo.debug = debug;
 
 var isFloat = function(n) {
     return n != "" && !isNaN(n) && Math.round(n) != n;
 };
-sharemapjs.isFloat = debug;
+sharemapdymo.isFloat = debug;
 
 
 var debugCols = function(prefix, arr, suffix, level) {
@@ -171,12 +171,12 @@ var debugCols = function(prefix, arr, suffix, level) {
     debug(row, level);
 
 };
-sharemapjs.debugCols = debugCols;
+sharemapdymo.debugCols = debugCols;
 
 var log10 = function(x) {
     return Math.log(x) / Math.LN10;
 };
-sharemapjs.log10 = log10;
+sharemapdymo.log10 = log10;
 
 var shuffle = function(array) {
     var counter = array.length, temp, index;
@@ -197,13 +197,13 @@ var shuffle = function(array) {
 
     return array;
 };
-sharemapjs.shuffle = shuffle;
+sharemapdymo.shuffle = shuffle;
 
 var rotateArr = function(arr) {
     arr.unshift(arr.pop());
 }
 
-sharemapjs.rotateArr = rotateArr;
+sharemapdymo.rotateArr = rotateArr;
 
 var generatePlacelistResult = function(places, indexes) {
     var res = [];
@@ -213,7 +213,7 @@ var generatePlacelistResult = function(places, indexes) {
     }
     return res;
 };
-sharemapjs.generatePlacelistResult = generatePlacelistResult;
+sharemapdymo.generatePlacelistResult = generatePlacelistResult;
 
 var fillArray = function(len, val) {
     var res = [];
@@ -223,7 +223,7 @@ var fillArray = function(len, val) {
     return res;
 };
 
-sharemapjs.fillArray = fillArray;
+sharemapdymo.fillArray = fillArray;
 
 
 function round_figures(x, n)
@@ -315,4 +315,4 @@ var fmtF6 = function(fNum) {
     return str;
 }
 
-sharemapjs.choice = choice;
+sharemapdymo.choice = choice;

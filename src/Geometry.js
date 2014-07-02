@@ -1,7 +1,7 @@
 
 //(function() {
-//sharemapjs.static.hasProp = {}.hasOwnProperty,
-/*    sharemapjs.static.extends = function(child, parent) {
+//sharemapdymo.static.hasProp = {}.hasOwnProperty,
+/*    sharemapdymo.static.extends = function(child, parent) {
  for (var key in parent) {
  if (__hasProp.call(parent, key))
  child[key] = parent[key];
@@ -69,7 +69,7 @@ Vector.prototype.normalize = function() {
 Vector.prototype.clone = function() {
     return new Vector(this.x, this.y);
 };
-sharemapjs.Vector = Vector;
+sharemapdymo.Vector = Vector;
 var Edge = function(pointA, pointB) {
     this.pointA = pointA;
     this.pointB = pointB;
@@ -100,7 +100,7 @@ Edge.prototype.intersects = function(other, ray) {
     }
 }
 
-sharemapjs.Edge = Edge;
+sharemapdymo.Edge = Edge;
 var Polygon = function(vertices, edges) {
     this.vertices = vertices != null ? vertices : [];
     this.edges = edges != null ? edges : [];
@@ -398,7 +398,7 @@ Polygon.prototype.clone = function(bounds) {
     return res;
 }
 
-sharemapjs.Polygon = Polygon;
+sharemapdymo.Polygon = Polygon;
 var Geometry = function Geometry(polygons) {
     this.polygons = (polygons != null) ? polygons : [];
 }
@@ -516,4 +516,4 @@ Geometry.prototype.setTextLabel = function(text, x, y, w, h, fontFamily, fontSiz
     }
 }
 
-sharemapjs.Geometry = Geometry;
+sharemapdymo.Geometry = Geometry;

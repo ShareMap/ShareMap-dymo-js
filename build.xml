@@ -6,6 +6,7 @@
     <target name="build-js">
         <concat destfile="sharemap-dymo.js" overwrite="true" eol="lf">
             <fileset file="./include/js/header.js"/>
+            <fileset file="./src/TextMeasureOpenType.js"/>
             <fileset file="./src/Helper.js"/>
             <fileset file="./src/Geometry.js"/>
             <fileset file="./src/Places.js"/>
@@ -16,16 +17,31 @@
     </target>
     
     <target name="build-node-js">
-        <!-- Create the time stamp -->
-        <tstamp/>
-        <!-- Create the build directory structure used by compile -->
-        <mkdir dir="${build}"/>
+        <concat destfile="sharemap-dymo-node.js" overwrite="true" eol="lf">
+            <fileset file="./include/node-js/header.js"/>
+            <fileset file="./src/TextMeasureOpenType.js"/>
+            <fileset file="./src/Helper.js"/>
+            <fileset file="./src/Geometry.js"/>
+            <fileset file="./src/Places.js"/>
+            <fileset file="./src/Annealer.js"/>
+            <fileset file="./src/Labeler.js"/>
+            <fileset file="./include/node-js/footer.js"/>
+        </concat>
     </target>
     
     <target name="build-as">
-        <!-- Create the time stamp -->
-        <tstamp/>
-        <!-- Create the build directory structure used by compile -->
-        <mkdir dir="${build}"/>
+        <concat destfile="/Volumes/MacData/jakaniew/fb_workspaces/AGSInsight/Dymo-AS-Test/src/sharemap-dymo.as" overwrite="true" eol="lf">
+            <fileset file="./include/as/header.js"/>
+            <fileset file="./src/TextMeasureOpenType.js"/>
+            <fileset file="./src/Helper.js"/>
+            <fileset file="./src/Geometry.js"/>
+            <fileset file="./src/Places.js"/>
+            <fileset file="./src/Annealer.js"/>
+            <fileset file="./src/Labeler.js"/>
+            <fileset file="./include/as/footer.js"/>
+        </concat>
     </target>
+    
+   
+   
 </project>

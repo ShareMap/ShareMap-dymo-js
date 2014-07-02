@@ -4,7 +4,7 @@ var Annealer = function(energyFunc, moveFunc) {
 
 Annealer.prototype.init = function(energyFunc, moveFunc)
 {
-    this.fakeData = true;//(sharemapjs.fakeData === true);
+    this.fakeData = true;//(sharemapdymo.fakeData === true);
     var self = this;
     self.energy = energyFunc;  // function to calculate energy of a state
     self.move = moveFunc;      // function to make a random change to a state
@@ -312,4 +312,4 @@ Annealer.prototype.auto = function(state, minutes, steps)
     debug('Annealing from ' + Tmax + ' to ' + Tmin + ' over ' + duration + ' steps.');
     return self.anneal(state, Tmax, Tmin, duration, 20, minutes > .3);
 }
-sharemapjs.Annealer = Annealer;
+sharemapdymo.Annealer = Annealer;

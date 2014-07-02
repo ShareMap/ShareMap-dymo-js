@@ -32,17 +32,17 @@
         </style> 
         <script src="./jquery.js"></script>
         <script src="../src/TextMeasure.js"></script>
-        <script src="../src/TextMeasureCanvas.js"></script>
+        <script src="../src/TextMeasureHtml.js"></script>
         <script>
 
             function runMeasureTest() {
-                var tmc = new TextMeasureCanvas();
+                var tmc = new TextMeasureHtml();
                 tmc.init();
-                var m1 = tmc.measure("Philadelphia", 12, "DejaVuSansMono");
+                var m1 = tmc.measureText("Philadelphia", 12, "DejaVuSansMono");
                 console.log(m1);
-                var m2 = tmc.measure("Philadelphia", 12, "DejaVuSerif");
+                var m2 = tmc.measureText("Philadelphia", 12, "DejaVuSerif");
                 console.log(m2);
-                var m3 = tmc.measure("Chicago", 12, "DejaVuSansMono");
+                var m3 = tmc.measureText("Chicago", 12, "DejaVuSansMono");
                 console.log(m3);
             }
 

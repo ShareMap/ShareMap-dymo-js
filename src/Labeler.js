@@ -22,7 +22,7 @@ Labeler.prototype.annealPlacelist = function(places1, indexes, weight, connectio
     // minutes = 0.1;
     //    console.log("Annealer params ",places, minutes, Math.min(100, weight * 20));
     //     return;
-    var aRes = annealer.auto(places1, minutes, Math.min(100, weight * 20));
+    var aRes = annealer.auto(places1, minutes, Math.min(1000, weight * 20));
     var annealedPlaces = aRes.bestState;
     var e = aRes.bestEnergy;
 
@@ -90,4 +90,4 @@ Labeler.defaultOptions = {
     minutes: 0.1
 }
 
-sharemapjs.Labeler = Labeler;
+sharemapdymo.Labeler = Labeler;

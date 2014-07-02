@@ -5,7 +5,7 @@ labelPointEquals = function(lp1, lp2) {
     if (lp1 == lp2) {
         return true;
     }
-    return lp1.name === lp2.name; //TODO: check this
+    return lp1._orgId === lp2._orgId; //TODO: check this
 }
 
 labelPointInSet = function(lp1, lpArr) {
@@ -46,15 +46,15 @@ var RectShape = function(x, y, w, h) {
     this.h = h;
 }
 
-var objDeepCopy = sharemapjs.objDeepCopy;
-var projectPoint = sharemapjs.projectPoint;
+var objDeepCopy = sharemapdymo.objDeepCopy;
+var projectPoint = sharemapdymo.projectPoint;
 
-var Vector = sharemapjs.Vector;
+var Vector = sharemapdymo.Vector;
 
 
 var LabelPoint = function(name, fontFamily, fontSize, location, position, radius, properties, rank, preferred, extras) {
     this.init(name, fontFamily, fontSize, location, position, radius, properties, rank, preferred, extras);
-    //this.hash = Math.round(sharemapjs.random() * 10000);
+    //this.hash = Math.round(sharemapdymo.random() * 10000);
 };
 
 
@@ -112,6 +112,7 @@ LabelPoint.prototype.init = function(name, fontFamily, fontSize, location, posit
      throw new Exception('Silly human trying to pass an invalid latitude of ' + location.lat + ' for ' + name)
      }*/
     self._id = "LP_" + (++LabelPoint.IDGENERATOR);
+    self._orgId = self._id;
     self.name = name;
     self.location = location;
     self.position = position;
@@ -205,7 +206,7 @@ LabelPoint.prototype.populateShapes = function() {
     self.point_shape.name = "point_shape " + self.name;
     var x = self.position.x;
     var y = self.position.y
-    var metric = sharemapjs.TextMeasure.measureText(self.name, self.fontSize, self.fontFamily)
+    var metric = sharemapdymo.TextMeasure.measureText(self.name, self.fontSize, self.fontFamily)
     w = metric.w;
     h = metric.h;
     self.baseline = metric.b;
@@ -451,7 +452,7 @@ LabelPoint.prototype.labelBounds = function(orgX, orgY, width, height, radius, p
     return res;
 };
 
-sharemapjs.LabelPoint = LabelPoint;
+sharemapdymo.LabelPoint = LabelPoint;
 
 
 
@@ -733,4 +734,4 @@ Places.prototype.in_pieces = function() {
      */
 }
 
-sharemapjs.Places = Places;
+sharemapdymo.Places = Places;

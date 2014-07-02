@@ -1,2 +1,2 @@
-var sharemapjs = (function(sharemapjs){
+(function(){
     
