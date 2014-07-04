@@ -8,9 +8,9 @@ function drawPolygon(polygon, res) {
         res = "";
     }
     res += '<polygon style="fill:lime;stroke:purple;stroke-width:1"  points="';
-    _ref = polygon.vertices;
-    for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-        vertex = _ref[_i];
+    var _ref = polygon.vertices;
+    for (var _i = 0, _len = _ref.length; _i < _len; _i++) {
+        var vertex = _ref[_i];
         res += vertex.x + "," + vertex.y + " ";
     }
     res += '"/>\n';
@@ -36,24 +36,6 @@ function drawGeometry(geometry, res) {
 }
 
 
-function drawOrUpdate(lp) {
-    var svgContainer = d3.select("body").append("svg")
-            .attr("width", 200)
-            .attr("height", 200);
-
-    var dataset
-
-    svgContainer.data(dataset).enter()
-            .append("g")
-            .append("polygon")
-            .attr("points", function(d) {
-                return d.values.map(function(e) {
-                    return e.x + "," + e.y;
-                }).join(" ");
-            })
-            .style("fill", "brown");
-}
-
 
 
 
@@ -75,13 +57,13 @@ var fontInitHandler = function() {
     /* */
 
 
-    places = new Places();
+    var places = new Places();
     var pointArr = [];
 
 
     var t1 = (new Date()).getTime();
 
-    oldTime = 0;
+    var oldTime = 0;
 
 
     var minX = 1000000;
@@ -157,7 +139,7 @@ var fontInitHandler = function() {
     var ais = null;
     var labeler = new Labeler();
     var labelerOpts = {
-        minutes: 1
+        minutes: 0.1
     }
     ais = labeler.annealInSerial(places, labelerOpts);
     // timeTrack();*/
@@ -181,7 +163,7 @@ var fontInitHandler = function() {
     svg += "]]>\n"
 
     svg += "</style>\n";
-    svg += "</defs>\n∂";
+    svg += "</defs>\n";
     for (var i = 0; i < placesArr.length; i++)
             // var i =5;
             {

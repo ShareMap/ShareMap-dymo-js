@@ -69,7 +69,7 @@ Labeler.prototype.annealInSerial = function(places, options)
    // annealer.init(annealer,energyFunc, moveFunc);
     annealer.id = "Annealer";
     this.annealer = annealer;
-    annealed = fillArray(places.places.length, null);
+   var annealed = fillArray(places.places.length, null);
 
     var inPieces = places.in_pieces();
     for (var i = 0; i < inPieces.length; i++)

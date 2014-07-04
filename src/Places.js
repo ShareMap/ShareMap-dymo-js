@@ -1,4 +1,5 @@
-labelPointEquals = function(lp1, lp2) {
+var labelPointEquals = function(lp1, lp2) {
+    // var x : Number = "33";
     if ((lp1 == null) || (lp2 == null)) {
         return false;
     }
@@ -8,23 +9,23 @@ labelPointEquals = function(lp1, lp2) {
     return lp1._orgId === lp2._orgId; //TODO: check this
 }
 
-labelPointInSet = function(lp1, lpArr) {
+var labelPointInSet = function(lp1, lpArr) {
     for (var i = 0; i < lpArr.length; i++) {
-        lp2 = lpArr[i];
+        var lp2 = lpArr[i];
         if (labelPointEquals(lp1, lp2))
             return true;
     }
     return false;
 };
 
-labelPointInPlacement = function(lp1, lpArr) {
+var labelPointInPlacement = function(lp1, lpArr) {
     if (lpArr.indexOf(lp1.placements) >= 0) {
         return true;
     }
     return false;
 };
 
-placementInSet = function(placement, pArr) {
+var placementInSet = function(placement, pArr) {
     for (var i = 0; i < pArr.length; i++) {
         if (pArr[i] == placement)
             return true;
@@ -32,7 +33,7 @@ placementInSet = function(placement, pArr) {
     return false;
 }
 
-labelPointAddToSet = function(lp1, lpArr) {
+var labelPointAddToSet = function(lp1, lpArr) {
     if (labelPointInSet(lp1, lpArr)) {
         return false;
     }
@@ -131,7 +132,7 @@ LabelPoint.prototype.init = function(name, fontFamily, fontSize, location, posit
     self.label_footprint = null  //all possible label shapes, together
     self.mask_footprint = null  // all possible mask shapes, together
     self.point_shape = null     // point shape for current placement
-    full_extras = ((extras) && ((extras.hasOwnProperty('placement'))
+    var full_extras = ((extras) && ((extras.hasOwnProperty('placement'))
             && (extras.hasOwnProperty('label_shapes'))
             && (extras.hasOwnProperty('mask_shapes'))
             && (extras.hasOwnProperty('label_footprint'))
@@ -207,8 +208,8 @@ LabelPoint.prototype.populateShapes = function() {
     var x = self.position.x;
     var y = self.position.y
     var metric = sharemapdymo.TextMeasure.measureText(self.name, self.fontSize, self.fontFamily)
-    w = metric.w;
-    h = metric.h;
+    var w = metric.w;
+    var h = metric.h;
     self.baseline = metric.b;
 
     for (var pKey in LabelPoint.placements) {
@@ -290,7 +291,7 @@ LabelPoint.prototype.populatePlacements = function(preferred) {
     }
 
     else {
-        throw new Error('Unknown preferred placement "%s"' % preferred)
+        throw new Error("Unknown preferred placement " + preferred)
     }
 };
 
@@ -317,9 +318,14 @@ LabelPoint.prototype.registration = function() {
 // Return a registration point and text justification.
 //
     var self = this;
-    xmin, ymin, xmax, ymax = self.label_shape.bounds
-    y = ymin + self.baseline;
-
+    //xmin, ymin, xmax, ymax = self.label_shape.bounds //TODO : Renable this function
+    var xmin;
+    var ymin;
+    var xmax;
+    var ymax;
+    var justification;
+    var y = ymin + self.baseline;
+    var x;
     if (placementInSet(self.placement, [LabelPoint.NNE, LabelPoint.NE, LabelPoint.ENE, LabelPoint.ESE, LabelPoint.SE, LabelPoint.SSE])) {
         x = xmin;
         justification = 'left';
@@ -369,7 +375,7 @@ LabelPoint.prototype.overlaps = function(other, reflexive) {
     }
     var self = this;
     var otherLabel = other.label();
-    overlaps = self.mask_shape.intersects(otherLabel)
+    var overlaps = self.mask_shape.intersects(otherLabel)
 
     if (reflexive) {
         overlaps |= other.overlaps(self, false)
@@ -383,7 +389,7 @@ LabelPoint.prototype.can_overlap = function(other, reflexive) {
         reflexive = true;
     }
     var self = this;
-    can_overlap = self.mask_footprint.intersects(other.mask_footprint)
+    var can_overlap = self.mask_footprint.intersects(other.mask_footprint)
     if (reflexive) {
         can_overlap |= other.can_overlap(self, false)
     }
@@ -418,8 +424,8 @@ LabelPoint.prototype.labelBounds = function(orgX, orgY, width, height, radius, p
         y -= height / 6;
     }
     if (placementInSet(placement, [LabelPoint.NNE, LabelPoint.SSE, LabelPoint.SSW, LabelPoint.NNW])) {
-        _x = radius * Math.cos(Math.PI / 4) + width / 2;
-        _y = radius * Math.sin(Math.PI / 4) + height / 2;
+        var _x = radius * Math.cos(Math.PI / 4) + width / 2;
+        var _y = radius * Math.sin(Math.PI / 4) + height / 2;
 
         if (placementInSet(placement, [LabelPoint.NNE, LabelPoint.SSE])) {
             x += _x;
@@ -442,11 +448,11 @@ LabelPoint.prototype.labelBounds = function(orgX, orgY, width, height, radius, p
 // right on the bottom
         y -= radius + height / 2;
     }
-    x1 = x - width / 2;
-    y1 = y + height / 2;
-    x2 = x + width / 2;
-    y2 = y - height / 2;
-    res = Geometry.generateFromRect(x1, y1, x2, y2);
+    var x1 = x - width / 2;
+    var y1 = y + height / 2;
+    var x2 = x + width / 2;
+    var y2 = y - height / 2;
+    var res = Geometry.generateFromRect(x1, y1, x2, y2);
     res.setColor("red");
     res.setTextLabel(this.name, x1, y1, width, height, this.fontFamily, this.fontSize);
     return res;
@@ -554,10 +560,12 @@ Places.prototype.move = function() {
         throw new Error('Zero places');
     }
     var place = choice(self.moveable);
-    neighbors = self.neighbors[place]
-    for (key in neighbors) { //XXX
+    var neighbors = self.neighbors[place];
+    var other;
+    var overlapEnergy;
+    for (var key in neighbors) { //XXX
         other = neighbors[key];
-        var overlapEnergy = self.overlap_energy(place, other);
+        overlapEnergy = self.overlap_energy(place, other);
         self.energy -= overlapEnergy
     }
 
@@ -567,7 +575,7 @@ Places.prototype.move = function() {
 
     for (key in neighbors) {
         other = neighbors[key];
-        var overlapEnergy = self.overlap_energy(place, other);
+        overlapEnergy = self.overlap_energy(place, other);
         self.energy += overlapEnergy;
         //console.log("OVERLAP ENERGY " + place.name + " [" + place.placement + "]" + " vs " + other.name + " [" + other.placement + "] = " + overlapEnergy);
     }
@@ -575,9 +583,10 @@ Places.prototype.move = function() {
     self.energy += placementEnergy;
     debug("PLACES MOVE ENERGY " + fmtF6(self.energy), LEVEL2);
 }
+
 Places.prototype.count = function() {
     var self = this;
-    return len(self.places)
+    return self.places.length();
 }
 
 Places.prototype.hashable = true;

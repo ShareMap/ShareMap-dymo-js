@@ -2,6 +2,9 @@
 var sharemapdymo = {};
 if (!opentype){
 var opentype = require(__dirname + "/lib/opentype-js/opentype.js");
+}
+var isArray = function(arg){
+   return  Array.isArray(arg);
 }/*
  * Depends on OpenType.js
  */
@@ -152,7 +155,7 @@ var projectMercator = function(lam, phi, out) {
 sharemapdymo.projectMercator = projectMercator;
 
 var projectPoint = function(lat, lng, z) {
-    Vector = sharemapdymo.Vector;
+    var Vector = sharemapdymo.Vector;
     var dimension = 256 * Math.pow(2, z);
     var DTR = Math.PI / 180.0;
     var res = {};
@@ -193,9 +196,9 @@ sharemapdymo.radians = radians;
 var routeMove = function(state) {
     var stateLen = state.length;
     /*Swaps two cities in the route.*/
-    a = randomInt(0, stateLen - 1)
-    b = randomInt(0, stateLen - 1)
-    stateSwap = state[a];
+    var a = randomInt(0, stateLen - 1)
+    var b = randomInt(0, stateLen - 1)
+    var stateSwap = state[a];
     state[a] = state[b];
     state[b] = stateSwap;
 };
@@ -203,19 +206,19 @@ sharemapdymo.route_move = routeMove;
 
 
 var distance = function(a, b) {
-    R = 3963  // radius of Earth (miles)
-    lat1 = this.radians(a[0]);
-    lon1 = this.radians(a[1]);
-    lat2 = this.radians(b[0]);
-    lon2 = this.radians(b[1]);
-    res = Math.acos(Math.sin(lat1) * Math.sin(lat2) + Math.cos(lat1) * Math.cos(lat2) * Math.cos(lon1 - lon2)) * R;
+    var R = 3963  // radius of Earth (miles)
+    var lat1 = this.radians(a[0]);
+    var lon1 = this.radians(a[1]);
+    var lat2 = this.radians(b[0]);
+    var  lon2 = this.radians(b[1]);
+    var res = Math.acos(Math.sin(lat1) * Math.sin(lat2) + Math.cos(lat1) * Math.cos(lat2) * Math.cos(lon1 - lon2)) * R;
     return res;
 };
 sharemapdymo.distance = distance;
 
 
-random = function(caller) {
-    var randProvider;
+var random = function(caller) {
+    var randomProvider;
     if (sharemapdymo.hasOwnProperty("randomProvider")) {
         randomProvider = sharemapdymo.randomProvider;
     } else {
@@ -226,9 +229,9 @@ random = function(caller) {
 };
 sharemapdymo.random = random;
 
-randomInt = function(minimum, maximum, caller) {
+var randomInt = function(minimum, maximum, caller) {
     var r = random(caller);
-    res = Math.floor(r * (maximum - minimum + 1)) + minimum;
+    var res = Math.floor(r * (maximum - minimum + 1)) + minimum;
     return res;
 };
 sharemapdymo.randomInt = randomInt;
@@ -261,7 +264,7 @@ var debugCols = function(prefix, arr, suffix, level) {
         } else {
             s = arr[i].toString();
         }
-        for (j = s.length; j < 10; j++) {
+        for (var j = s.length; j < 10; j++) {
             s = " " + s
         }
         row += s;
@@ -315,7 +318,7 @@ sharemapdymo.generatePlacelistResult = generatePlacelistResult;
 
 var fillArray = function(len, val) {
     var res = [];
-    for (i = 0; i < len; i++) {
+    for (var i = 0; i < len; i++) {
         res.push(val);
     }
     return res;
@@ -380,9 +383,9 @@ function time() {
 
 var choice = function(objArr) {
     var arr = null;
-    if (!Array.isArray(objArr)) {
+    if (!isArray(objArr)) {
         arr = [];
-        for (key in objArr) {
+        for (var key in objArr) {
             arr.push(key);
         }
     } else {
@@ -933,7 +936,8 @@ Geometry.prototype.setTextLabel = function(text, x, y, w, h, fontFamily, fontSiz
 }
 
 sharemapdymo.Geometry = Geometry;
-labelPointEquals = function(lp1, lp2) {
+var labelPointEquals = function(lp1, lp2) {
+    // var x : Number = "33";
     if ((lp1 == null) || (lp2 == null)) {
         return false;
     }
@@ -943,23 +947,23 @@ labelPointEquals = function(lp1, lp2) {
     return lp1._orgId === lp2._orgId; //TODO: check this
 }
 
-labelPointInSet = function(lp1, lpArr) {
+var labelPointInSet = function(lp1, lpArr) {
     for (var i = 0; i < lpArr.length; i++) {
-        lp2 = lpArr[i];
+        var lp2 = lpArr[i];
         if (labelPointEquals(lp1, lp2))
             return true;
     }
     return false;
 };
 
-labelPointInPlacement = function(lp1, lpArr) {
+var labelPointInPlacement = function(lp1, lpArr) {
     if (lpArr.indexOf(lp1.placements) >= 0) {
         return true;
     }
     return false;
 };
 
-placementInSet = function(placement, pArr) {
+var placementInSet = function(placement, pArr) {
     for (var i = 0; i < pArr.length; i++) {
         if (pArr[i] == placement)
             return true;
@@ -967,7 +971,7 @@ placementInSet = function(placement, pArr) {
     return false;
 }
 
-labelPointAddToSet = function(lp1, lpArr) {
+var labelPointAddToSet = function(lp1, lpArr) {
     if (labelPointInSet(lp1, lpArr)) {
         return false;
     }
@@ -1066,7 +1070,7 @@ LabelPoint.prototype.init = function(name, fontFamily, fontSize, location, posit
     self.label_footprint = null  //all possible label shapes, together
     self.mask_footprint = null  // all possible mask shapes, together
     self.point_shape = null     // point shape for current placement
-    full_extras = ((extras) && ((extras.hasOwnProperty('placement'))
+    var full_extras = ((extras) && ((extras.hasOwnProperty('placement'))
             && (extras.hasOwnProperty('label_shapes'))
             && (extras.hasOwnProperty('mask_shapes'))
             && (extras.hasOwnProperty('label_footprint'))
@@ -1142,8 +1146,8 @@ LabelPoint.prototype.populateShapes = function() {
     var x = self.position.x;
     var y = self.position.y
     var metric = sharemapdymo.TextMeasure.measureText(self.name, self.fontSize, self.fontFamily)
-    w = metric.w;
-    h = metric.h;
+    var w = metric.w;
+    var h = metric.h;
     self.baseline = metric.b;
 
     for (var pKey in LabelPoint.placements) {
@@ -1225,7 +1229,7 @@ LabelPoint.prototype.populatePlacements = function(preferred) {
     }
 
     else {
-        throw new Error('Unknown preferred placement "%s"' % preferred)
+        throw new Error("Unknown preferred placement " + preferred)
     }
 };
 
@@ -1252,9 +1256,14 @@ LabelPoint.prototype.registration = function() {
 // Return a registration point and text justification.
 //
     var self = this;
-    xmin, ymin, xmax, ymax = self.label_shape.bounds
-    y = ymin + self.baseline;
-
+    //xmin, ymin, xmax, ymax = self.label_shape.bounds //TODO : Renable this function
+    var xmin;
+    var ymin;
+    var xmax;
+    var ymax;
+    var justification;
+    var y = ymin + self.baseline;
+    var x;
     if (placementInSet(self.placement, [LabelPoint.NNE, LabelPoint.NE, LabelPoint.ENE, LabelPoint.ESE, LabelPoint.SE, LabelPoint.SSE])) {
         x = xmin;
         justification = 'left';
@@ -1304,7 +1313,7 @@ LabelPoint.prototype.overlaps = function(other, reflexive) {
     }
     var self = this;
     var otherLabel = other.label();
-    overlaps = self.mask_shape.intersects(otherLabel)
+    var overlaps = self.mask_shape.intersects(otherLabel)
 
     if (reflexive) {
         overlaps |= other.overlaps(self, false)
@@ -1318,7 +1327,7 @@ LabelPoint.prototype.can_overlap = function(other, reflexive) {
         reflexive = true;
     }
     var self = this;
-    can_overlap = self.mask_footprint.intersects(other.mask_footprint)
+    var can_overlap = self.mask_footprint.intersects(other.mask_footprint)
     if (reflexive) {
         can_overlap |= other.can_overlap(self, false)
     }
@@ -1353,8 +1362,8 @@ LabelPoint.prototype.labelBounds = function(orgX, orgY, width, height, radius, p
         y -= height / 6;
     }
     if (placementInSet(placement, [LabelPoint.NNE, LabelPoint.SSE, LabelPoint.SSW, LabelPoint.NNW])) {
-        _x = radius * Math.cos(Math.PI / 4) + width / 2;
-        _y = radius * Math.sin(Math.PI / 4) + height / 2;
+        var _x = radius * Math.cos(Math.PI / 4) + width / 2;
+        var _y = radius * Math.sin(Math.PI / 4) + height / 2;
 
         if (placementInSet(placement, [LabelPoint.NNE, LabelPoint.SSE])) {
             x += _x;
@@ -1377,11 +1386,11 @@ LabelPoint.prototype.labelBounds = function(orgX, orgY, width, height, radius, p
 // right on the bottom
         y -= radius + height / 2;
     }
-    x1 = x - width / 2;
-    y1 = y + height / 2;
-    x2 = x + width / 2;
-    y2 = y - height / 2;
-    res = Geometry.generateFromRect(x1, y1, x2, y2);
+    var x1 = x - width / 2;
+    var y1 = y + height / 2;
+    var x2 = x + width / 2;
+    var y2 = y - height / 2;
+    var res = Geometry.generateFromRect(x1, y1, x2, y2);
     res.setColor("red");
     res.setTextLabel(this.name, x1, y1, width, height, this.fontFamily, this.fontSize);
     return res;
@@ -1489,10 +1498,12 @@ Places.prototype.move = function() {
         throw new Error('Zero places');
     }
     var place = choice(self.moveable);
-    neighbors = self.neighbors[place]
-    for (key in neighbors) { //XXX
+    var neighbors = self.neighbors[place];
+    var other;
+    var overlapEnergy;
+    for (var key in neighbors) { //XXX
         other = neighbors[key];
-        var overlapEnergy = self.overlap_energy(place, other);
+        overlapEnergy = self.overlap_energy(place, other);
         self.energy -= overlapEnergy
     }
 
@@ -1502,7 +1513,7 @@ Places.prototype.move = function() {
 
     for (key in neighbors) {
         other = neighbors[key];
-        var overlapEnergy = self.overlap_energy(place, other);
+        overlapEnergy = self.overlap_energy(place, other);
         self.energy += overlapEnergy;
         //console.log("OVERLAP ENERGY " + place.name + " [" + place.placement + "]" + " vs " + other.name + " [" + other.placement + "] = " + overlapEnergy);
     }
@@ -1510,9 +1521,10 @@ Places.prototype.move = function() {
     self.energy += placementEnergy;
     debug("PLACES MOVE ENERGY " + fmtF6(self.energy), LEVEL2);
 }
+
 Places.prototype.count = function() {
     var self = this;
-    return len(self.places)
+    return self.places.length();
 }
 
 Places.prototype.hashable = true;
@@ -1771,6 +1783,8 @@ Annealer.prototype.anneal = function(state, Tmax, Tmin, steps, updates, logProgr
     var trials = 0;
     var accepts = 0;
     var improves = 0;
+	var updateWavelength;
+	var dE;
     if (updates > 0)
     {
 
@@ -1858,11 +1872,12 @@ Annealer.prototype.auto = function(state, minutes, steps)
 
         /*Anneals a system at constant temperature and returns the state,
          energy, rate of acceptance, and rate of improvement.*/
-        E = self.energy(state);
-        prevState = objDeepCopy(state);
-        prevEnergy = E;
-        accepts = 0;
-        improves = 0;
+        var E = self.energy(state);
+        var prevState = objDeepCopy(state);
+       var prevEnergy = E;
+        var accepts = 0;
+       var improves = 0;
+	   var dE;
         for (var step = 0; step < steps; step++)
         {
             self.move(state);
@@ -1894,14 +1909,14 @@ Annealer.prototype.auto = function(state, minutes, steps)
     }
 
 
-    step = 0;
-    start = time();
+    var step = 0;
+    var start = time();
 
     debug('Attempting automatic simulated anneal...');
 
     // Find an initial guess for temperature
-    T = 0.0;
-    E = self.energy(state);
+    var T = 0.0;
+    var E = self.energy(state);
     while (T == 0.0)
     {
         step += 1;
@@ -1917,7 +1932,7 @@ Annealer.prototype.auto = function(state, minutes, steps)
 
         /*Prints the current temperature, energy, acceptance rate,
          improvement rate, and elapsed time.*/
-        elapsed = time() - start;
+        var elapsed = time() - start;
         if (this.fakeData)
             elapsed = 50.1;
         debugCols("", [T, E, 100.0 * acceptance, 100.0 * improvement, time_string(elapsed)]);
@@ -1925,11 +1940,11 @@ Annealer.prototype.auto = function(state, minutes, steps)
 
 
     // Search for Tmax - a temperature that gives 98% acceptance
-    runRes = run(state, T, steps);
+    var runRes = run(state, T, steps);
     state = runRes.run1;
     E = runRes.run2;
-    acceptance = runRes.run3;
-    improvement = runRes.run4;
+    var acceptance = runRes.run3;
+    var improvement = runRes.run4;
 
     step += steps;
     while (acceptance > 0.98)
@@ -1956,7 +1971,7 @@ Annealer.prototype.auto = function(state, minutes, steps)
         update(T, E, acceptance, improvement);
     }
 
-    Tmax = T;
+   var Tmax = T;
     debug("Improvement loop");
 
     // Search for Tmin - a temperature that gives 0% improvement
@@ -1972,14 +1987,14 @@ Annealer.prototype.auto = function(state, minutes, steps)
         update(T, E, acceptance, improvement);
     }
 
-    Tmin = T;
+    var Tmin = T;
 
     // Calculate anneal duration
-    elapsed = time() - start;
+    var elapsed = time() - start;
     if (this.fakeData)
         elapsed = 200.1;
 
-    duration = round_figures(int(60.0 * minutes * step / elapsed), 2)
+   var  duration = round_figures(int(60.0 * minutes * step / elapsed), 2)
     debug('Annealing from ' + Tmax + ' to ' + Tmin + ' over ' + duration + ' steps.');
     return self.anneal(state, Tmax, Tmin, duration, 20, minutes > .3);
 }
@@ -2007,7 +2022,7 @@ Labeler.prototype.annealPlacelist = function(places1, indexes, weight, connectio
     // minutes = 0.1;
     //    console.log("Annealer params ",places, minutes, Math.min(100, weight * 20));
     //     return;
-    var aRes = annealer.auto(places1, minutes, Math.min(100, weight * 20));
+    var aRes = annealer.auto(places1, minutes, Math.min(1000, weight * 20));
     var annealedPlaces = aRes.bestState;
     var e = aRes.bestEnergy;
 
@@ -2054,7 +2069,7 @@ Labeler.prototype.annealInSerial = function(places, options)
    // annealer.init(annealer,energyFunc, moveFunc);
     annealer.id = "Annealer";
     this.annealer = annealer;
-    annealed = fillArray(places.places.length, null);
+   var annealed = fillArray(places.places.length, null);
 
     var inPieces = places.in_pieces();
     for (var i = 0; i < inPieces.length; i++)

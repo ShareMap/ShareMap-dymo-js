@@ -54,7 +54,7 @@ var projectMercator = function(lam, phi, out) {
 sharemapdymo.projectMercator = projectMercator;
 
 var projectPoint = function(lat, lng, z) {
-    Vector = sharemapdymo.Vector;
+    var Vector = sharemapdymo.Vector;
     var dimension = 256 * Math.pow(2, z);
     var DTR = Math.PI / 180.0;
     var res = {};
@@ -95,9 +95,9 @@ sharemapdymo.radians = radians;
 var routeMove = function(state) {
     var stateLen = state.length;
     /*Swaps two cities in the route.*/
-    a = randomInt(0, stateLen - 1)
-    b = randomInt(0, stateLen - 1)
-    stateSwap = state[a];
+    var a = randomInt(0, stateLen - 1)
+    var b = randomInt(0, stateLen - 1)
+    var stateSwap = state[a];
     state[a] = state[b];
     state[b] = stateSwap;
 };
@@ -105,19 +105,19 @@ sharemapdymo.route_move = routeMove;
 
 
 var distance = function(a, b) {
-    R = 3963  // radius of Earth (miles)
-    lat1 = this.radians(a[0]);
-    lon1 = this.radians(a[1]);
-    lat2 = this.radians(b[0]);
-    lon2 = this.radians(b[1]);
-    res = Math.acos(Math.sin(lat1) * Math.sin(lat2) + Math.cos(lat1) * Math.cos(lat2) * Math.cos(lon1 - lon2)) * R;
+    var R = 3963  // radius of Earth (miles)
+    var lat1 = this.radians(a[0]);
+    var lon1 = this.radians(a[1]);
+    var lat2 = this.radians(b[0]);
+    var  lon2 = this.radians(b[1]);
+    var res = Math.acos(Math.sin(lat1) * Math.sin(lat2) + Math.cos(lat1) * Math.cos(lat2) * Math.cos(lon1 - lon2)) * R;
     return res;
 };
 sharemapdymo.distance = distance;
 
 
-random = function(caller) {
-    var randProvider;
+var random = function(caller) {
+    var randomProvider;
     if (sharemapdymo.hasOwnProperty("randomProvider")) {
         randomProvider = sharemapdymo.randomProvider;
     } else {
@@ -128,9 +128,9 @@ random = function(caller) {
 };
 sharemapdymo.random = random;
 
-randomInt = function(minimum, maximum, caller) {
+var randomInt = function(minimum, maximum, caller) {
     var r = random(caller);
-    res = Math.floor(r * (maximum - minimum + 1)) + minimum;
+    var res = Math.floor(r * (maximum - minimum + 1)) + minimum;
     return res;
 };
 sharemapdymo.randomInt = randomInt;
@@ -163,7 +163,7 @@ var debugCols = function(prefix, arr, suffix, level) {
         } else {
             s = arr[i].toString();
         }
-        for (j = s.length; j < 10; j++) {
+        for (var j = s.length; j < 10; j++) {
             s = " " + s
         }
         row += s;
@@ -217,7 +217,7 @@ sharemapdymo.generatePlacelistResult = generatePlacelistResult;
 
 var fillArray = function(len, val) {
     var res = [];
-    for (i = 0; i < len; i++) {
+    for (var i = 0; i < len; i++) {
         res.push(val);
     }
     return res;
@@ -282,9 +282,9 @@ function time() {
 
 var choice = function(objArr) {
     var arr = null;
-    if (!Array.isArray(objArr)) {
+    if (!isArray(objArr)) {
         arr = [];
-        for (key in objArr) {
+        for (var key in objArr) {
             arr.push(key);
         }
     } else {

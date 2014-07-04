@@ -100,6 +100,8 @@ Annealer.prototype.anneal = function(state, Tmax, Tmin, steps, updates, logProgr
     var trials = 0;
     var accepts = 0;
     var improves = 0;
+	var updateWavelength;
+	var dE;
     if (updates > 0)
     {
 
@@ -187,11 +189,12 @@ Annealer.prototype.auto = function(state, minutes, steps)
 
         /*Anneals a system at constant temperature and returns the state,
          energy, rate of acceptance, and rate of improvement.*/
-        E = self.energy(state);
-        prevState = objDeepCopy(state);
-        prevEnergy = E;
-        accepts = 0;
-        improves = 0;
+        var E = self.energy(state);
+        var prevState = objDeepCopy(state);
+       var prevEnergy = E;
+        var accepts = 0;
+       var improves = 0;
+	   var dE;
         for (var step = 0; step < steps; step++)
         {
             self.move(state);
@@ -223,14 +226,14 @@ Annealer.prototype.auto = function(state, minutes, steps)
     }
 
 
-    step = 0;
-    start = time();
+    var step = 0;
+    var start = time();
 
     debug('Attempting automatic simulated anneal...');
 
     // Find an initial guess for temperature
-    T = 0.0;
-    E = self.energy(state);
+    var T = 0.0;
+    var E = self.energy(state);
     while (T == 0.0)
     {
         step += 1;
@@ -246,7 +249,7 @@ Annealer.prototype.auto = function(state, minutes, steps)
 
         /*Prints the current temperature, energy, acceptance rate,
          improvement rate, and elapsed time.*/
-        elapsed = time() - start;
+        var elapsed = time() - start;
         if (this.fakeData)
             elapsed = 50.1;
         debugCols("", [T, E, 100.0 * acceptance, 100.0 * improvement, time_string(elapsed)]);
@@ -254,11 +257,11 @@ Annealer.prototype.auto = function(state, minutes, steps)
 
 
     // Search for Tmax - a temperature that gives 98% acceptance
-    runRes = run(state, T, steps);
+    var runRes = run(state, T, steps);
     state = runRes.run1;
     E = runRes.run2;
-    acceptance = runRes.run3;
-    improvement = runRes.run4;
+    var acceptance = runRes.run3;
+    var improvement = runRes.run4;
 
     step += steps;
     while (acceptance > 0.98)
@@ -285,7 +288,7 @@ Annealer.prototype.auto = function(state, minutes, steps)
         update(T, E, acceptance, improvement);
     }
 
-    Tmax = T;
+   var Tmax = T;
     debug("Improvement loop");
 
     // Search for Tmin - a temperature that gives 0% improvement
@@ -301,14 +304,14 @@ Annealer.prototype.auto = function(state, minutes, steps)
         update(T, E, acceptance, improvement);
     }
 
-    Tmin = T;
+    var Tmin = T;
 
     // Calculate anneal duration
-    elapsed = time() - start;
+    var elapsed = time() - start;
     if (this.fakeData)
         elapsed = 200.1;
 
-    duration = round_figures(int(60.0 * minutes * step / elapsed), 2)
+   var  duration = round_figures(int(60.0 * minutes * step / elapsed), 2)
     debug('Annealing from ' + Tmax + ' to ' + Tmin + ' over ' + duration + ' steps.');
     return self.anneal(state, Tmax, Tmin, duration, 20, minutes > .3);
 }
