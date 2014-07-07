@@ -207,10 +207,10 @@ sharemapdymo.route_move = routeMove;
 
 var distance = function(a, b) {
     var R = 3963  // radius of Earth (miles)
-    var lat1 = this.radians(a[0]);
-    var lon1 = this.radians(a[1]);
-    var lat2 = this.radians(b[0]);
-    var  lon2 = this.radians(b[1]);
+    var lat1 = radians(a[0]);
+    var lon1 = radians(a[1]);
+    var lat2 = radians(b[0]);
+    var  lon2 = radians(b[1]);
     var res = Math.acos(Math.sin(lat1) * Math.sin(lat2) + Math.cos(lat1) * Math.cos(lat2) * Math.cos(lon1 - lon2)) * R;
     return res;
 };
@@ -398,6 +398,8 @@ var choice = function(objArr) {
         s += "" + arr[i] + (i == idx ? "!" : "") + " ,";
     }
     var res = arr[idx];
+    
+    var ri = getRI();
     debug("Choice " + (res.hasOwnProperty("name") ? res.name : res) + " [" + idx + " max " + max + "] [RI: " + ri + "]", LEVEL2);
 
     return res;
@@ -743,7 +745,7 @@ Polygon.prototype.boundsCollides = function(r1, r2) {
     var xInt = true;
     if (
             ((r1x1 > r2x2) && (r1x2 > r2x2))
-            || ((r1x2 < r2x1) && (r1x2 < r2x1))
+            || ((r1x1 < r2x1) && (r1x2 < r2x1))
             )
     {
         xInt = false;
@@ -752,7 +754,7 @@ Polygon.prototype.boundsCollides = function(r1, r2) {
     var yInt = true;
     if (
             ((r1y1 > r2y2) && (r1y2 > r2y2))
-            || ((r1y2 < r2y1) && (r1y2 < r2y1))
+            || ((r1y1 < r2y1) && (r1y2 < r2y1))
             )
     {
         yInt = false;
@@ -767,6 +769,8 @@ Polygon.prototype.polygonCollides = function(p1, p2) {
     overlap = true;
     if (!this.boundsCollides(p1, p2)) {
         return false;
+    } else { 
+        return true;
     }
     /*if (p1.bounds.min.gt(p2.bounds.max)) {
      overlap = false;
@@ -851,7 +855,7 @@ Geometry.prototype.intersects = function(geom2) {
             var polygon2 = geom2.polygons[j];
             if (polygon1.collides(polygon2)) {
                 res = true;
-                break;
+                return res;
             }
         }
     }
@@ -868,9 +872,7 @@ Geometry.prototype.union = function(geom2) {
 Geometry.unionGeometries = function(geomArrOrObject) {
     var polygons2 = [];
     var geomArr = [];
-    // var isArray = (Array.isArray(geomArrOrObject); //TODO : Check this
-    var isArray = ((geomArrOrObject.length) && (geomArrOrObject.length > 0));
-    if (isArray) {
+    if (isArray(geomArrOrObject)) {
         geomArr = geomArrOrObject;
     } else {
         for (var key in geomArrOrObject) {
@@ -1101,7 +1103,7 @@ LabelPoint.prototype.init = function(name, fontFamily, fontSize, location, posit
 
 LabelPoint.prototype.hashable = true;
 
-LabelPoint.prototype.includePointInCollission = true;
+LabelPoint.prototype.includePointInCollission = false;
 
 LabelPoint.prototype.toString = function() {
     var self = this;
@@ -1138,8 +1140,8 @@ LabelPoint.prototype.deepCopy = function(objDict) {
 
 LabelPoint.prototype.populateShapes = function() {
     var self = this;
-    self.buffer = 0;
-    self.radius = 5;
+    self.buffer = 2;
+    self.radius = 1;
     var point_buffered = Geometry.generateFromPoint(self.position.x, self.position.y, self.radius + self.buffer);
     self.point_shape = Geometry.generateFromPoint(self.position.x, self.position.y, self.radius);
     self.point_shape.name = "point_shape " + self.name;
@@ -1155,7 +1157,7 @@ LabelPoint.prototype.populateShapes = function() {
         var placement = pKey;
         var label_shape = this.labelBounds(x, y, w, h, self.radius, placement);
         label_shape.name = "label_shape " + self.name;
-        var label_shape_buffered = label_shape.buffer(self.buffer, 2)
+        var label_shape_buffered = label_shape.buffer(self.buffer, 3)
         var mask_shape = null;
         if (this.includePointInCollission) {
             mask_shape = label_shape_buffered.union(point_buffered);
@@ -1687,18 +1689,20 @@ sharemapdymo.Places = Places;var Annealer = function(energyFunc, moveFunc) {
 
 Annealer.prototype.init = function(energyFunc, moveFunc)
 {
-    this.fakeData = true;//(sharemapdymo.fakeData === true);
+    sharemapdymo.fakeData = true;//(sharemapdymo.fakeData === true);
     var self = this;
     self.energy = energyFunc;  // function to calculate energy of a state
     self.move = moveFunc;      // function to make a random change to a state
+    this.logProgress = false;
 };
 
 
-Annealer.prototype.anneal = function(state, Tmax, Tmin, steps, updates, logProgress)
+Annealer.prototype.anneal = function(state, Tmax, Tmin, steps, updates)
 {
+    var logProgress = this.logProgress;
     var self = this;
     //Tmax = 17; //TODO: Remove this
-    debug("anneal: ", [Tmax, Tmin, steps, updates]);
+    debugCols("anneal: ", [Tmax, Tmin, steps, updates]);
     if (!updates)
         updates = 0;
     if (!logProgress)
@@ -1740,7 +1744,7 @@ Annealer.prototype.anneal = function(state, Tmax, Tmin, steps, updates, logProgr
          thermally accessible.*/
 
         var elapsed = time() - start;
-        if (this.fakeData)
+        if (sharemapdymo.fakeData)
             elapsed = 50.1;
         if ((step == 0) && (logProgress))
         {
@@ -1933,7 +1937,7 @@ Annealer.prototype.auto = function(state, minutes, steps)
         /*Prints the current temperature, energy, acceptance rate,
          improvement rate, and elapsed time.*/
         var elapsed = time() - start;
-        if (this.fakeData)
+        if (sharemapdymo.fakeData)
             elapsed = 50.1;
         debugCols("", [T, E, 100.0 * acceptance, 100.0 * improvement, time_string(elapsed)]);
     }
@@ -1945,7 +1949,7 @@ Annealer.prototype.auto = function(state, minutes, steps)
     E = runRes.run2;
     var acceptance = runRes.run3;
     var improvement = runRes.run4;
-
+	console.log("Stage 3");
     step += steps;
     while (acceptance > 0.98)
     {
@@ -1957,8 +1961,9 @@ Annealer.prototype.auto = function(state, minutes, steps)
         improvement = runRes2.run4;
         step += steps;
         update(T, E, acceptance, improvement);
+		debug("acceptance "+acceptance);
     }
-
+	console.log("Stage 4");
     while (acceptance < 0.98)
     {
         T = round_figures(T * 1.5, 2);
@@ -1969,8 +1974,9 @@ Annealer.prototype.auto = function(state, minutes, steps)
         improvement = runRes.run4;
         step += steps;
         update(T, E, acceptance, improvement);
+		debug("acceptance2 "+acceptance);
     }
-
+	console.log("Stage 5");
    var Tmax = T;
     debug("Improvement loop");
 
@@ -1986,14 +1992,14 @@ Annealer.prototype.auto = function(state, minutes, steps)
         step += steps;
         update(T, E, acceptance, improvement);
     }
-
+	console.log("Stage 6");
     var Tmin = T;
 
     // Calculate anneal duration
     var elapsed = time() - start;
-    if (this.fakeData)
+    if (sharemapdymo.fakeData)
         elapsed = 200.1;
-
+	console.log("Stage 7");
    var  duration = round_figures(int(60.0 * minutes * step / elapsed), 2)
     debug('Annealing from ' + Tmax + ' to ' + Tmin + ' over ' + duration + ' steps.');
     return self.anneal(state, Tmax, Tmin, duration, 20, minutes > .3);
@@ -2049,6 +2055,13 @@ Labeler.prototype.annealPlacelist = function(places1, indexes, weight, connectio
     return res;
 };
 
+Labeler.prototype.energyFunc = function(inpPlaces) {
+	return inpPlaces.energy;
+};
+Labeler.prototype.moveFunc = function(inpPlaces) {
+	inpPlaces.move()
+};
+
 Labeler.prototype.annealInSerial = function(places, options)
 {
 
@@ -2058,14 +2071,9 @@ Labeler.prototype.annealInSerial = function(places, options)
     }
 
 
-    var energyFunc = function(inpPlaces) {
-        return inpPlaces.energy;
-    };
-    var moveFunc = function(inpPlaces) {
-        inpPlaces.move()
-    };
     
-    var annealer = new Annealer(energyFunc, moveFunc);;
+    
+    var annealer = new Annealer(this.energyFunc, this.moveFunc);;
    // annealer.init(annealer,energyFunc, moveFunc);
     annealer.id = "Annealer";
     this.annealer = annealer;

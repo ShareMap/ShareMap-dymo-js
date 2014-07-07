@@ -106,10 +106,10 @@ sharemapdymo.route_move = routeMove;
 
 var distance = function(a, b) {
     var R = 3963  // radius of Earth (miles)
-    var lat1 = this.radians(a[0]);
-    var lon1 = this.radians(a[1]);
-    var lat2 = this.radians(b[0]);
-    var  lon2 = this.radians(b[1]);
+    var lat1 = radians(a[0]);
+    var lon1 = radians(a[1]);
+    var lat2 = radians(b[0]);
+    var  lon2 = radians(b[1]);
     var res = Math.acos(Math.sin(lat1) * Math.sin(lat2) + Math.cos(lat1) * Math.cos(lat2) * Math.cos(lon1 - lon2)) * R;
     return res;
 };
@@ -297,6 +297,8 @@ var choice = function(objArr) {
         s += "" + arr[i] + (i == idx ? "!" : "") + " ,";
     }
     var res = arr[idx];
+    
+    var ri = getRI();
     debug("Choice " + (res.hasOwnProperty("name") ? res.name : res) + " [" + idx + " max " + max + "] [RI: " + ri + "]", LEVEL2);
 
     return res;

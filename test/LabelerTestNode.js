@@ -18,10 +18,13 @@ global.debug  = function(msg){
 
 var sharemapdymo = require(__dirname + "/../sharemap-dymo-node.js");
 global.sharemapdymo=sharemapdymo;
+var sharemapdymo = require(__dirname + "/./TextMeasurePreset.js");
+
 var USz6 = require(__dirname + "/./USz6.js");
 global.USz6=USz6;
 var FakeRandom = require(__dirname + "/./FakeRandom.js");
 global.fakeRandom=FakeRandom.fakeRandom;
+global.getRI=FakeRandom.getRI;
 var labelerTest = require(__dirname + "/./LabelerTest.js");
 global.saveFile = saveFile;
 labelerTest.runLabelerTest();

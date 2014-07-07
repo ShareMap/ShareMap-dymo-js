@@ -4,18 +4,20 @@ var Annealer = function(energyFunc, moveFunc) {
 
 Annealer.prototype.init = function(energyFunc, moveFunc)
 {
-    this.fakeData = true;//(sharemapdymo.fakeData === true);
+    sharemapdymo.fakeData = true;//(sharemapdymo.fakeData === true);
     var self = this;
     self.energy = energyFunc;  // function to calculate energy of a state
     self.move = moveFunc;      // function to make a random change to a state
+    this.logProgress = false;
 };
 
 
-Annealer.prototype.anneal = function(state, Tmax, Tmin, steps, updates, logProgress)
+Annealer.prototype.anneal = function(state, Tmax, Tmin, steps, updates)
 {
+    var logProgress = this.logProgress;
     var self = this;
     //Tmax = 17; //TODO: Remove this
-    debug("anneal: ", [Tmax, Tmin, steps, updates]);
+    debugCols("anneal: ", [Tmax, Tmin, steps, updates]);
     if (!updates)
         updates = 0;
     if (!logProgress)
@@ -57,7 +59,7 @@ Annealer.prototype.anneal = function(state, Tmax, Tmin, steps, updates, logProgr
          thermally accessible.*/
 
         var elapsed = time() - start;
-        if (this.fakeData)
+        if (sharemapdymo.fakeData)
             elapsed = 50.1;
         if ((step == 0) && (logProgress))
         {
@@ -250,7 +252,7 @@ Annealer.prototype.auto = function(state, minutes, steps)
         /*Prints the current temperature, energy, acceptance rate,
          improvement rate, and elapsed time.*/
         var elapsed = time() - start;
-        if (this.fakeData)
+        if (sharemapdymo.fakeData)
             elapsed = 50.1;
         debugCols("", [T, E, 100.0 * acceptance, 100.0 * improvement, time_string(elapsed)]);
     }
@@ -262,7 +264,7 @@ Annealer.prototype.auto = function(state, minutes, steps)
     E = runRes.run2;
     var acceptance = runRes.run3;
     var improvement = runRes.run4;
-
+	console.log("Stage 3");
     step += steps;
     while (acceptance > 0.98)
     {
@@ -274,8 +276,9 @@ Annealer.prototype.auto = function(state, minutes, steps)
         improvement = runRes2.run4;
         step += steps;
         update(T, E, acceptance, improvement);
+		debug("acceptance "+acceptance);
     }
-
+	console.log("Stage 4");
     while (acceptance < 0.98)
     {
         T = round_figures(T * 1.5, 2);
@@ -286,8 +289,9 @@ Annealer.prototype.auto = function(state, minutes, steps)
         improvement = runRes.run4;
         step += steps;
         update(T, E, acceptance, improvement);
+		debug("acceptance2 "+acceptance);
     }
-
+	console.log("Stage 5");
    var Tmax = T;
     debug("Improvement loop");
 
@@ -303,14 +307,14 @@ Annealer.prototype.auto = function(state, minutes, steps)
         step += steps;
         update(T, E, acceptance, improvement);
     }
-
+	console.log("Stage 6");
     var Tmin = T;
 
     // Calculate anneal duration
     var elapsed = time() - start;
-    if (this.fakeData)
+    if (sharemapdymo.fakeData)
         elapsed = 200.1;
-
+	console.log("Stage 7");
    var  duration = round_figures(int(60.0 * minutes * step / elapsed), 2)
     debug('Annealing from ' + Tmax + ' to ' + Tmin + ' over ' + duration + ' steps.');
     return self.anneal(state, Tmax, Tmin, duration, 20, minutes > .3);

@@ -58,8 +58,10 @@
             var tmot;
 
             function init() {
-                tmot = new sharemapdymo.TextMeasureOpenType()
-                tmot.init([DejaVuSerif], fontsReady);
+                //tmot = new sharemapdymo.TextMeasureOpenType()
+                //tmot = new sharemapdymo.TextMeasurePreset();
+                //tmot.init([DejaVuSerif], fontsReady);
+                fontsReady();
             }
 
         </script>
@@ -76,7 +78,8 @@
         <script src="../src/Labeler.js"></script>
         <script src="./FakeRandom.js"></script>
         <script src="./LabelerTest.js"></script>
-
+       <script src="./TextMeasurePreset.js"></script>
+       
     </head> 
     <body onload="init()">
         <div>TODO write content</div>

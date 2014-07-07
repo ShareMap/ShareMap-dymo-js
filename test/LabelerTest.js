@@ -1,5 +1,5 @@
 var Labeler = sharemapdymo.Labeler;
-var randomProvider = sharemapdymo.randomProvider;
+sharemapdymo.randomProvider = sharemapdymo.fakeRandom;
 
 
 
@@ -43,7 +43,7 @@ var runLabelerTest = function() {
 
     debug("Start time: " + (new Date()));
     sharemapdymo.fakeData = true;
-    sharemapdymo.randomProvider = fakeRandom;
+    //fontInitHandler();
     sharemapdymo.TextMeasure.init(["DejaVuSerif.ttf"], fontInitHandler);
 }
 
@@ -53,12 +53,10 @@ var fontInitHandler = function() {
     var LabelPoint = sharemapdymo.LabelPoint;
 
     var projectPoint = sharemapdymo.projectPoint;
-    var annealInSerial = sharemapdymo.annealInSerial;
     /* */
 
 
     var places = new Places();
-    var pointArr = [];
 
 
     var t1 = (new Date()).getTime();
@@ -69,7 +67,7 @@ var fontInitHandler = function() {
     var minX = 1000000;
     var minY = 1000000;
 
-    var zoomLevel = 2;
+    var zoomLevel = 8;
     //zoomLevel = 2;
 
     var projectPoint = sharemapdymo.projectPoint;
@@ -83,40 +81,66 @@ var fontInitHandler = function() {
      minY = Math.min(minY, pos.y);
      }
      */
-    zoomLevel = 6;
-    var inpPlaces = USz6;
-    for (var i = 0; i < inpPlaces.length; i++) {
-        var point = inpPlaces[i];
-        console.log(point);
-        var pos = projectPoint(point.lat, point.lng, zoomLevel);
-        point.pos = pos;
-        minX = Math.min(minX, pos.x);
-        minY = Math.min(minY, pos.y);
-    }
-
-    var p;
-    minX -= 200;
-    minY -= 200;
-    var out = "";
-    places.buffer = 0;
-    for (var i = 0; i < inpPlaces.length; i++) {
-        point = inpPlaces[i];
-        console.log(point);
-        pos = point.pos;
-        pos.x -= minX;
-        pos.y -= minY;
-        places.buffer = 0;
-        var lp = new LabelPoint(point.name, "DejaVuSerif.ttf", (point.population > 1000000 ? 20 : 14), {
-            lat: point.lat,
-            lng: point.lng
-        }, pos, point, 1);
-        if (lp == null) {
-            throw Error("AX");
+    var allPlaces = false;
+    if (allPlaces) {
+        zoomLevel = 6;
+        var inpPlaces = USz6;
+        for (var i = 0; i < inpPlaces.length; i++) {
+            var point = inpPlaces[i];
+            // console.log(point);
+            var pos = projectPoint(point.lat, point.lng, zoomLevel);
+            point.pos = pos;
+            minX = Math.min(minX, pos.x);
+            minY = Math.min(minY, pos.y);
         }
-        //console.log("places.add(Point(\"" + p[0] + "\",", "\"" + p[1] + "\"", ",", p[2], ", LMM(", p[3].lat, ",", p[3].lon, "), PMM(", p[4].x, ",", p[4].y, "),", p[5], ",{}));\n");
-        places.add(lp);
+
+        var p;
+        minX -= 200;
+        minY -= 200;
+        var out = "";
+        places.buffer = 0;
+        var cities = ["New York City", "Boston"];
+        cities = null;
+        for (var i = 0; i < inpPlaces.length; i++) {
+            point = inpPlaces[i];
+            if ((cities!=null)&&(cities.indexOf(point.name) == -1))
+                continue;
+            //console.log(point);
+            pos = point.pos;
+            pos.x -= minX;
+            pos.y -= minY;
+            places.buffer = 0;
+            var lp = new LabelPoint(point.name, "DejaVuSerif.ttf", (point.population > 1000000 ? 20 : 14), {
+                lat: point.lat,
+                lng: point.lng
+            }, pos, point, 1);
+            if (lp == null) {
+                throw Error("AX");
+            }
+            //console.log("places.add(Point(\"" + p[0] + "\",", "\"" + p[1] + "\"", ",", p[2], ", LMM(", p[3].lat, ",", p[3].lon, "), PMM(", p[4].x, ",", p[4].y, "),", p[5], ",{}));\n");
+            places.add(lp);
+        }
     }
-    console.log(places);
+    else {
+        sharemapdymo.TextMeasure = new sharemapdymo.TextMeasurePreset();
+        var LMM = function(lat, lng) {
+            return {
+                lat: lat,
+                lng: lng
+            }
+        }
+
+        var PMM = function(x, y) {
+            return {
+                x: x,
+                y: y
+            }
+        }
+
+        places.add(new LabelPoint("New York", "fonts/Arial.ttf", 12, LMM(40.71427, -74.00597), PMM(203.2933546666668, 200), 1, {}));
+        places.add(new LabelPoint("Philadelphia", "fonts/Arial.ttf", 12, LMM(39.95234, -75.16379), PMM(200, 202.84314394819785), 1, {}));
+    }
+    //console.log(places);
     //return;
     //return;
     var t2 = (new Date()).getTime();
@@ -176,6 +200,7 @@ var fontInitHandler = function() {
                     svg = drawGeometry(geom, svg);
                     // mGeom.draw(ctx);
                 } catch (err) {
+                    console.log(err);
                     console.error(err);
                 }
 
@@ -191,7 +216,7 @@ var fontInitHandler = function() {
     }
     for (var i = 0; i < placesArr.length; i++) {
         var place = placesArr[i];
-        console.log(i+ (place!=null?(" ["+place._orgId+"] "+place.name):"null"));
+        console.log(i + (place != null ? (" [" + place._orgId + "] " + place.name) : "null"));
     }
     for (var i = 0; i < placesArr.length; i++) {
         for (var j = 0; j < placesArr.length; j++) {

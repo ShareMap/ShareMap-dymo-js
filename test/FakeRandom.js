@@ -1,6 +1,7 @@
 (function() {
-    var ri = 0;
-    var rarr = [0.5798394104931504,
+    var FakeRandom = {};
+    FakeRandom.ri = 0;
+    FakeRandom.rarr = [0.5798394104931504,
         0.4713145769201219,
         0.8743063122965395,
         0.22144133667461574,
@@ -1001,17 +1002,27 @@
         0.22161810286343098,
         0.6936952152755111];
 
-    function fakeRandom() {
-        var r = rarr[ri];
-        ri = ri + 1;
-        if (ri > 900)
-            ri = 0;
+    FakeRandom.fakeRandom = function() {
+        var r = FakeRandom.rarr[FakeRandom.ri];
+        FakeRandom.ri = FakeRandom.ri + 1;
+        if (FakeRandom.ri > 900)
+            FakeRandom.ri = 0;
         return r;
+    }
+
+    FakeRandom.getRI = function() {
+        return FakeRandom.ri;
     }
     if (typeof module === 'object' && module.exports) {
 
-        module.exports.fakeRandom = fakeRandom;
+        module.exports.fakeRandom = FakeRandom.fakeRandom;
+        module.exports.getRI = FakeRandom.getRI;
     } else {
-        window.fakeRandom = fakeRandom;
+        window.fakeRandom = FakeRandom.fakeRandom;
+        window.getRI = FakeRandom.getRI;
+    }
+    if (sharemapdymo) {
+        sharemapdymo.fakeRandom = FakeRandom.fakeRandom;
+        sharemapdymo.getRI = FakeRandom.getRI;
     }
 })();

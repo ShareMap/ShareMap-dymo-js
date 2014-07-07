@@ -324,7 +324,7 @@ Polygon.prototype.boundsCollides = function(r1, r2) {
     var xInt = true;
     if (
             ((r1x1 > r2x2) && (r1x2 > r2x2))
-            || ((r1x2 < r2x1) && (r1x2 < r2x1))
+            || ((r1x1 < r2x1) && (r1x2 < r2x1))
             )
     {
         xInt = false;
@@ -333,7 +333,7 @@ Polygon.prototype.boundsCollides = function(r1, r2) {
     var yInt = true;
     if (
             ((r1y1 > r2y2) && (r1y2 > r2y2))
-            || ((r1y2 < r2y1) && (r1y2 < r2y1))
+            || ((r1y1 < r2y1) && (r1y2 < r2y1))
             )
     {
         yInt = false;
@@ -348,6 +348,8 @@ Polygon.prototype.polygonCollides = function(p1, p2) {
     overlap = true;
     if (!this.boundsCollides(p1, p2)) {
         return false;
+    } else { 
+        return true;
     }
     /*if (p1.bounds.min.gt(p2.bounds.max)) {
      overlap = false;
@@ -432,7 +434,7 @@ Geometry.prototype.intersects = function(geom2) {
             var polygon2 = geom2.polygons[j];
             if (polygon1.collides(polygon2)) {
                 res = true;
-                break;
+                return res;
             }
         }
     }
@@ -449,9 +451,7 @@ Geometry.prototype.union = function(geom2) {
 Geometry.unionGeometries = function(geomArrOrObject) {
     var polygons2 = [];
     var geomArr = [];
-    // var isArray = (Array.isArray(geomArrOrObject); //TODO : Check this
-    var isArray = ((geomArrOrObject.length) && (geomArrOrObject.length > 0));
-    if (isArray) {
+    if (isArray(geomArrOrObject)) {
         geomArr = geomArrOrObject;
     } else {
         for (var key in geomArrOrObject) {

@@ -49,6 +49,13 @@ Labeler.prototype.annealPlacelist = function(places1, indexes, weight, connectio
     return res;
 };
 
+Labeler.prototype.energyFunc = function(inpPlaces) {
+	return inpPlaces.energy;
+};
+Labeler.prototype.moveFunc = function(inpPlaces) {
+	inpPlaces.move()
+};
+
 Labeler.prototype.annealInSerial = function(places, options)
 {
 
@@ -58,14 +65,9 @@ Labeler.prototype.annealInSerial = function(places, options)
     }
 
 
-    var energyFunc = function(inpPlaces) {
-        return inpPlaces.energy;
-    };
-    var moveFunc = function(inpPlaces) {
-        inpPlaces.move()
-    };
     
-    var annealer = new Annealer(energyFunc, moveFunc);;
+    
+    var annealer = new Annealer(this.energyFunc, this.moveFunc);;
    // annealer.init(annealer,energyFunc, moveFunc);
     annealer.id = "Annealer";
     this.annealer = annealer;

@@ -1,7 +1,6 @@
-
-var testAnnealer = function() {
-    sharemapjs.fakeData = true;
-    sharemapjs.randomProvider = fakeRandom;
+var runAnnealerTest = function() {
+    sharemapdymo.fakeData = true;
+    sharemapdymo.randomProvider = sharemapdymo.fakeRandom;
 
     debug("TEST ANNEALER")
     for (var i = 0; i < 100; i++) {
@@ -26,17 +25,17 @@ var testAnnealer = function() {
         'Chicago': [41.88, 87.63], 'Houston': [29.77, 95.38],
         'Phoenix': [33.45, 112.07], 'Philadelphia': [39.95, 75.17]};
 
-    var route_energy = function(state, debug)
+    var routeEnergy = function(state, debug)
     {
 
         /*Calculates the length of the route.*/
-        e = 0
+        var e = 0
         var stateLen = state.length;
         for (var i = 0; i < stateLen; i++)
         {
             var c1 = cities[state[i > 0 ? i - 1 : stateLen - 1]];
             var c2 = cities[state[i]];
-            var c1c2Dist = AnnealerHelper.distance(c1, c2)
+            var c1c2Dist = distance(c1, c2)
             e += c1c2Dist;
         }
 
@@ -44,24 +43,24 @@ var testAnnealer = function() {
     }
 
 
-    var route_move = function(state)
+    var routeMove = function(state)
     {
         var stateLen = state.length;
         /*Swaps two cities in the route.*/
-        a = randomInt(0, stateLen - 1)
-        b = randomInt(0, stateLen - 1)
+        var a = randomInt(0, stateLen - 1)
+        var b = randomInt(0, stateLen - 1)
         // console.log("A: "+a+" B: "+b + "statelen",stateLen - 1);
-        stateSwap = state[a];
+        var stateSwap = state[a];
         state[a] = state[b];
         state[b] = stateSwap;
     };
 
 
-    var route_energy = function(state, debug)
+    var routeEnergy = function(state, debug)
     {
 
         /*Calculates the length of the route.*/
-        e = 0
+       var e = 0
         var stateLen = state.length;
         for (var i = 0; i < stateLen; i++)
         {
@@ -75,17 +74,19 @@ var testAnnealer = function() {
     }
 
     // Start with the cities listed in random order
-    state = objKeys(cities);
+   var state = objKeys(cities);
     //shuffle(state)
     state.sort();
     ri = 0;
     // Minimize the distance to be traveled by simulated annealing with a
     // manually chosen temperature schedule
-    annealer = new Annealer();
-    annealer.init(annealer, route_energy, route_move)
-    annealerRes = annealer.anneal(annealer, state, 10000000, 0.01, 180 * state.length, 9);
+  var  annealer = new Annealer();
+    annealer.init(routeEnergy, routeMove);
+    annealer.logProgress = true;
+    console.log("test");
+   var  annealerRes = annealer.anneal(state, 10000000, 0.01, 180 * state.length, 9);
     state = annealerRes.bestState;
-    e = annealerRes.bestEnergy;
+   var e = annealerRes.bestEnergy;
     /*
      while (state[0] != 'New York City')
      {
@@ -96,7 +97,7 @@ var testAnnealer = function() {
      state[0] = stateNY;
      }
      }*/
-    var mr = route_energy(state);
+    var mr = routeEnergy(state);
     debug("" + mr + " mile route");
     for (var i = 0; i < state.length; i++)
     {
@@ -111,7 +112,7 @@ var testAnnealer = function() {
 
     debug("auto");
 
-    var autoRes = annealer.auto(annealer, state, 0.1);
+    var autoRes = annealer.auto(state, 0.1);
     debug("AUTO FINISHED");
     state = autoRes.bestState;
     e = autoRes.bestEnergy;
@@ -120,13 +121,16 @@ var testAnnealer = function() {
         rotateArr(state, 1);
     }
 
-    var mr = route_energy(state);
+    var mr = routeEnergy(state);
     debug("" + mr + " mile route");
-    
-    for (var i = 0; i<state.length; i++){
+
+    for (var i = 0; i < state.length; i++) {
         var s = state[i];
         debug(s);
     }
 
     debug("END");
 }
+if (typeof module === 'object' && module.exports) {
+	module.exports.runAnnealerTest = runAnnealerTest;
+}	

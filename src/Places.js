@@ -163,7 +163,7 @@ LabelPoint.prototype.init = function(name, fontFamily, fontSize, location, posit
 
 LabelPoint.prototype.hashable = true;
 
-LabelPoint.prototype.includePointInCollission = true;
+LabelPoint.prototype.includePointInCollission = false;
 
 LabelPoint.prototype.toString = function() {
     var self = this;
@@ -200,8 +200,8 @@ LabelPoint.prototype.deepCopy = function(objDict) {
 
 LabelPoint.prototype.populateShapes = function() {
     var self = this;
-    self.buffer = 0;
-    self.radius = 5;
+    self.buffer = 2;
+    self.radius = 1;
     var point_buffered = Geometry.generateFromPoint(self.position.x, self.position.y, self.radius + self.buffer);
     self.point_shape = Geometry.generateFromPoint(self.position.x, self.position.y, self.radius);
     self.point_shape.name = "point_shape " + self.name;
@@ -217,7 +217,7 @@ LabelPoint.prototype.populateShapes = function() {
         var placement = pKey;
         var label_shape = this.labelBounds(x, y, w, h, self.radius, placement);
         label_shape.name = "label_shape " + self.name;
-        var label_shape_buffered = label_shape.buffer(self.buffer, 2)
+        var label_shape_buffered = label_shape.buffer(self.buffer, 3)
         var mask_shape = null;
         if (this.includePointInCollission) {
             mask_shape = label_shape_buffered.union(point_buffered);
